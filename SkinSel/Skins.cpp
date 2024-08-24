@@ -225,18 +225,7 @@ extern "C"
 					ReplaceTex("ev_tr2change_with_sonic", "stx_hara", "Sonic", "LD", "stx_hara", 38, 64, 64);
 					ReplaceTex("ev_tr2change_with_sonic", "stx_hoho", "Sonic", "LD", "stx_hoho", 39, 64, 64);
 					ReplaceTex("ev_tr2change_with_sonic", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 40, 64, 64);
-					ReplaceTex("ev_tr2change_with_sonic", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 41, 128, 128);
-					ReplaceTex("shooting1", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 304187, 32, 32);
-					ReplaceTex("shooting1", "s_anakage1", "Sonic", "LD", "s_anakage1", 304705, 32, 32);
-					ReplaceTex("shooting1", "s_hando2", "Sonic", "LD", "s_hando2", 304706, 32, 32);
-					ReplaceTex("shooting1", "s_hando3", "Sonic", "LD", "s_hando3", 304707, 32, 32);
-					ReplaceTex("shooting1", "s_testhand", "Sonic", "LD", "s_testhand", 304739, 64, 64);
-					ReplaceTex("shooting1", "stx_btest1", "Sonic", "LD", "stx_btest1", 304742, 64, 64);
-					ReplaceTex("shooting1", "stx_eye2", "Sonic", "LD", "stx_eye2", 304743, 64, 64);
-					ReplaceTex("shooting1", "stx_hara", "Sonic", "LD", "stx_hara", 304744, 64, 64);
-					ReplaceTex("shooting1", "stx_hoho", "Sonic", "LD", "stx_hoho", 304745, 64, 64);
-					ReplaceTex("shooting1", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 304747, 128, 128);
-					ReplaceTex("shooting1", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 304187, 32, 32);
+					ReplaceTex("ev_tr2change_with_sonic", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 41, 128, 128);					
 					ReplaceTex("ev_tr2before_with_sonic", "s_anakage1", "Sonic", "LD", "s_anakage1", 304755, 32, 32);
 					ReplaceTex("ev_tr2before_with_sonic", "s_hando2", "Sonic", "LD", "s_hando2", 304756, 32, 32);
 					ReplaceTex("ev_tr2before_with_sonic", "s_hando3", "Sonic", "LD", "s_hando3", 304757, 32, 32);
@@ -246,6 +235,35 @@ extern "C"
 					ReplaceTex("ev_tr2before_with_sonic", "stx_hara", "Sonic", "LD", "stx_hara", 304788, 64, 64);
 					ReplaceTex("ev_tr2before_with_sonic", "stx_hoho", "Sonic", "LD", "stx_hoho", 304789, 64, 64);
 					ReplaceTex("ev_tr2before_with_sonic", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 304791, 128, 128);
+
+					if (DCconversion)
+					{
+						return;
+					}
+
+					else
+					{
+						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting1", "s_anakage1", "Sonic", "LD", "s_anakage1", 304705, 32, 32);
+						ReplaceTex("shooting1", "s_hando2", "Sonic", "LD", "s_hando2", 304706, 32, 32);
+						ReplaceTex("shooting1", "s_hando3", "Sonic", "LD", "s_hando3", 304707, 32, 32);
+						ReplaceTex("shooting1", "s_testhand", "Sonic", "LD", "s_testhand", 304739, 64, 64);
+						ReplaceTex("shooting1", "stx_btest1", "Sonic", "LD", "stx_btest1", 304742, 64, 64);
+						ReplaceTex("shooting1", "stx_eye2", "Sonic", "LD", "stx_eye2", 304743, 64, 64);
+						ReplaceTex("shooting1", "stx_hara", "Sonic", "LD", "stx_hara", 304744, 64, 64);
+						ReplaceTex("shooting1", "stx_hoho", "Sonic", "LD", "stx_hoho", 304745, 64, 64);
+						ReplaceTex("shooting1", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 304747, 128, 128);
+						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting2", "s_anakage1", "Sonic", "LD", "s_anakage1", 304755, 32, 32);
+						ReplaceTex("shooting2", "s_hando2", "Sonic", "LD", "s_hando2", 304756, 32, 32);
+						ReplaceTex("shooting2", "s_hando3", "Sonic", "LD", "s_hando3", 304757, 32, 32);
+						ReplaceTex("shooting2", "s_testhand", "Sonic", "LD", "s_testhand", 304784, 64, 64);
+						ReplaceTex("shooting2", "stx_btest1", "Sonic", "LD", "stx_btest1", 304186, 64, 64);
+						ReplaceTex("shooting2", "stx_eye2", "Sonic", "LD", "stx_eye2", 304787, 64, 64);
+						ReplaceTex("shooting2", "stx_hara", "Sonic", "LD", "stx_hara", 304788, 64, 64);
+						ReplaceTex("shooting2", "stx_hoho", "Sonic", "LD", "stx_hoho", 304789, 64, 64);
+						ReplaceTex("shooting2", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 304791, 128, 128);
+					}
 				}
 
 				if (KindofTextDX == DreamcastT)
@@ -280,18 +298,7 @@ extern "C"
 					ReplaceTex("ev_tr2change_with_sonic", "stx_hara", "Sonic", "DXD", "stx_hara", 38, 64, 64);
 					ReplaceTex("ev_tr2change_with_sonic", "stx_hoho", "Sonic", "DXD", "stx_hoho", 39, 64, 64);
 					ReplaceTex("ev_tr2change_with_sonic", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 40, 64, 64);
-					ReplaceTex("ev_tr2change_with_sonic", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 41, 128, 128);
-					ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
-					ReplaceTex("shooting1", "s_anakage1", "Sonic", "DXD", "s_anakage1", 304705, 32, 32);
-					ReplaceTex("shooting1", "s_hando2", "Sonic", "DXD", "s_hando2", 304706, 32, 32);
-					ReplaceTex("shooting1", "s_hando3", "Sonic", "DXD", "s_hando3", 304707, 32, 32);
-					ReplaceTex("shooting1", "s_testhand", "Sonic", "DXD", "s_testhand", 304739, 64, 64);
-					ReplaceTex("shooting1", "stx_btest1", "Sonic", "DXD", "stx_btest1", 304742, 64, 64);
-					ReplaceTex("shooting1", "stx_eye2", "Sonic", "DXD", "stx_eye2", 304743, 64, 64);
-					ReplaceTex("shooting1", "stx_hara", "Sonic", "DXD", "stx_hara", 304744, 64, 64);
-					ReplaceTex("shooting1", "stx_hoho", "Sonic", "DXD", "stx_hoho", 304745, 64, 64);
-					ReplaceTex("shooting1", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304747, 128, 128);
-					ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
+					ReplaceTex("ev_tr2change_with_sonic", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 41, 128, 128);					
 					ReplaceTex("ev_tr2before_with_sonic", "s_anakage1", "Sonic", "DXD", "s_anakage1", 304755, 32, 32);
 					ReplaceTex("ev_tr2before_with_sonic", "s_hando2", "Sonic", "DXD", "s_hando2", 304756, 32, 32);
 					ReplaceTex("ev_tr2before_with_sonic", "s_hando3", "Sonic", "DXD", "s_hando3", 304757, 32, 32);
@@ -301,11 +308,71 @@ extern "C"
 					ReplaceTex("ev_tr2before_with_sonic", "stx_hara", "Sonic", "DXD", "stx_hara", 304788, 64, 64);
 					ReplaceTex("ev_tr2before_with_sonic", "stx_hoho", "Sonic", "DXD", "stx_hoho", 304789, 64, 64);
 					ReplaceTex("ev_tr2before_with_sonic", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304791, 128, 128);
+
+					if (DCconversion)
+					{
+						return;
+					}
+
+					else
+					{
+						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting1", "s_anakage1", "Sonic", "DXD", "s_anakage1", 304705, 32, 32);
+						ReplaceTex("shooting1", "s_hando2", "Sonic", "DXD", "s_hando2", 304706, 32, 32);
+						ReplaceTex("shooting1", "s_hando3", "Sonic", "DXD", "s_hando3", 304707, 32, 32);
+						ReplaceTex("shooting1", "s_testhand", "Sonic", "DXD", "s_testhand", 304739, 64, 64);
+						ReplaceTex("shooting1", "stx_btest1", "Sonic", "DXD", "stx_btest1", 304742, 64, 64);
+						ReplaceTex("shooting1", "stx_eye2", "Sonic", "DXD", "stx_eye2", 304743, 64, 64);
+						ReplaceTex("shooting1", "stx_hara", "Sonic", "DXD", "stx_hara", 304744, 64, 64);
+						ReplaceTex("shooting1", "stx_hoho", "Sonic", "DXD", "stx_hoho", 304745, 64, 64);
+						ReplaceTex("shooting1", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304747, 128, 128);						
+						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting2", "s_anakage1", "Sonic", "DXD", "s_anakage1", 304755, 32, 32);
+						ReplaceTex("shooting2", "s_hando2", "Sonic", "DXD", "s_hando2", 304756, 32, 32);
+						ReplaceTex("shooting2", "s_hando3", "Sonic", "DXD", "s_hando3", 304757, 32, 32);
+						ReplaceTex("shooting2", "s_testhand", "Sonic", "DXD", "s_testhand", 304784, 64, 64);
+						ReplaceTex("shooting2", "stx_btest1", "Sonic", "DXD", "stx_btest1", 304186, 64, 64);
+						ReplaceTex("shooting2", "stx_eye2", "Sonic", "DXD", "stx_eye2", 304787, 64, 64);
+						ReplaceTex("shooting2", "stx_hara", "Sonic", "DXD", "stx_hara", 304788, 64, 64);
+						ReplaceTex("shooting2", "stx_hoho", "Sonic", "DXD", "stx_hoho", 304789, 64, 64);
+						ReplaceTex("shooting2", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304791, 128, 128);
+					}
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("sonic", "sonic_dx");
+
+					if (DCconversion)
+					{
+						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DCWDX", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting1", "stx_kutusoko0", "Sonic", "DCWDX", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting1", "stx_kutusoko1", "Sonic", "DCWDX", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting1", "stx_shoose4", "Sonic", "DCWDX", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting1", "stx_shoose6", "Sonic", "DCWDX", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting1", "s_soneye", "Sonic", "DCWDX", "stx_eye2", 304216, 16, 16);
+						ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "DCWDX", "stx_btest1", 304300, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "DCWDX", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "DCWDX", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting1", "s_tr_sonsoko", "Sonic", "DCWDX", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting1", "s_tr_sonwhite", "Sonic", "DCWDX", "alltx_dwhite", 304306, 8, 8);
+						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "DCWDX", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting2", "stx_kutusoko0", "Sonic", "DCWDX", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting2", "stx_kutusoko1", "Sonic", "DCWDX", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting2", "stx_shoose4", "Sonic", "DCWDX", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting2", "stx_shoose6", "Sonic", "DCWDX", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting2", "s_soneye", "Sonic", "DCWDX", "stx_eye2", 304216, 16, 16);
+						ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "DCWDX", "stx_btest1", 304300, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "DCWDX", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "DCWDX", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting2", "s_tr_sonsoko", "Sonic", "DCWDX", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting2", "s_tr_sonwhite", "Sonic", "DCWDX", "alltx_dwhite", 304306, 8, 8);
+					}
+
+					else
+					{
+						return;
+					}
 				}
 			}
 		}
