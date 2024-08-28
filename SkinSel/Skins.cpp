@@ -110,8 +110,12 @@ extern "C"
 					ReplaceTex("shooting1", "stx_kutusoko0", "Sonic", "LDX", "stx_kutusoko0", 304188, 64, 64);
 					ReplaceTex("shooting1", "stx_kutusoko1", "Sonic", "LDX", "stx_kutusoko1", 304189, 64, 64);
 					ReplaceTex("shooting1", "stx_shoose4", "Sonic", "LDX", "stx_shoose4", 304190, 32, 32);
-					ReplaceTex("shooting1", "stx_shoose6", "Sonic", "LDX", "stx_shoose6", 304191, 32, 32);
+					ReplaceTex("shooting1", "stx_shoose6", "Sonic", "LDX", "stx_shoose6", 304191, 32, 32);					
 					ReplaceTex("shooting1", "s_soneye", "Sonic", "LDX", "stx_eye2", 304216, 16, 16);
+					ReplaceTex("shooting1", "s_t1_eye2", "Sonic", "LDX", "s_t1_eye2", 304233, 32, 32);
+					ReplaceTex("shooting1", "s_t1_hoho", "Sonic", "LDX", "stx_hoho", 304239, 32, 32);
+					ReplaceTex("shooting1", "s_t1_line00", "Sonic", "LDX", "s_t1_line00", 304242, 32, 32);
+					ReplaceTex("shooting1", "s_t1_line02", "Sonic", "LDX", "s_t1_line02", 304243, 32, 32);
 					ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "LDX", "stx_btest1", 304300, 32, 32);
 					ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "LDX", "s_tr_sonmimi", 304302, 32, 32);
 					ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "LDX", "stx_hada", 304304, 8, 8);
@@ -123,6 +127,10 @@ extern "C"
 					ReplaceTex("shooting2", "stx_shoose4", "Sonic", "LDX", "stx_shoose4", 304190, 32, 32);
 					ReplaceTex("shooting2", "stx_shoose6", "Sonic", "LDX", "stx_shoose6", 304191, 32, 32);
 					ReplaceTex("shooting2", "s_soneye", "Sonic", "LDX", "stx_eye2", 304216, 16, 16);
+					ReplaceTex("shooting2", "s_t1_eye2", "Sonic", "LDX", "s_t1_eye2", 304233, 32, 32);
+					ReplaceTex("shooting2", "s_t1_hoho", "Sonic", "LDX", "stx_hoho", 304239, 32, 32);
+					ReplaceTex("shooting2", "s_t1_line00", "Sonic", "LDX", "s_t1_line00", 304242, 32, 32);
+					ReplaceTex("shooting2", "s_t1_line02", "Sonic", "LDX", "s_t1_line02", 304243, 32, 32);
 					ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "LDX", "stx_btest1", 304300, 32, 32);
 					ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "LDX", "s_tr_sonmimi", 304302, 32, 32);
 					ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "LDX", "stx_hada", 304304, 8, 8);
@@ -171,6 +179,10 @@ extern "C"
 					ReplaceTex("shooting1", "stx_shoose4", "Sonic", "DCWDX", "stx_shoose4", 304190, 32, 32);
 					ReplaceTex("shooting1", "stx_shoose6", "Sonic", "DCWDX", "stx_shoose6", 304191, 32, 32);
 					ReplaceTex("shooting1", "s_soneye", "Sonic", "DCWDX", "stx_eye2", 304216, 16, 16);
+					ReplaceTex("shooting1", "s_t1_eye2", "Sonic", "DCWDX", "s_t1_eye2", 304233, 32, 32);
+					ReplaceTex("shooting1", "s_t1_hoho", "Sonic", "DCWDX", "stx_hoho", 304239, 32, 32);
+					ReplaceTex("shooting1", "s_t1_line00", "Sonic", "DCWDX", "s_t1_line00", 304242, 32, 32);
+					ReplaceTex("shooting1", "s_t1_line02", "Sonic", "DCWDX", "s_t1_line02", 304243, 32, 32);
 					ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "DCWDX", "stx_btest1", 304300, 32, 32);
 					ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "DCWDX", "s_tr_sonmimi", 304302, 32, 32);
 					ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "DCWDX", "stx_hada", 304304, 8, 8);
@@ -182,6 +194,10 @@ extern "C"
 					ReplaceTex("shooting2", "stx_shoose4", "Sonic", "DCWDX", "stx_shoose4", 304190, 32, 32);
 					ReplaceTex("shooting2", "stx_shoose6", "Sonic", "DCWDX", "stx_shoose6", 304191, 32, 32);
 					ReplaceTex("shooting2", "s_soneye", "Sonic", "DCWDX", "stx_eye2", 304216, 16, 16);
+					ReplaceTex("shooting2", "s_t1_eye2", "Sonic", "DCWDX", "s_t1_eye2", 304233, 32, 32);
+					ReplaceTex("shooting2", "s_t1_hoho", "Sonic", "DCWDX", "stx_hoho", 304239, 32, 32);
+					ReplaceTex("shooting2", "s_t1_line00", "Sonic", "DCWDX", "s_t1_line00", 304242, 32, 32);
+					ReplaceTex("shooting2", "s_t1_line02", "Sonic", "DCWDX", "s_t1_line02", 304243, 32, 32);
 					ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "DCWDX", "stx_btest1", 304300, 32, 32);
 					ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "DCWDX", "s_tr_sonmimi", 304302, 32, 32);
 					ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "DCWDX", "stx_hada", 304304, 8, 8);
@@ -238,7 +254,36 @@ extern "C"
 
 					if (DCconversion)
 					{
-						return;
+						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting1", "stx_kutusoko0", "Sonic", "LD", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting1", "stx_kutusoko1", "Sonic", "LD", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting1", "stx_shoose4", "Sonic", "LD", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting1", "stx_shoose6", "Sonic", "LD", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting1", "s_soneye", "Sonic", "LD", "stx_eye2_DC", 304216, 16, 16);
+						ReplaceTex("shooting1", "s_t1_eye2", "Sonic", "LD", "s_t1_eye2", 304233, 32, 32);
+						ReplaceTex("shooting1", "s_t1_hoho", "Sonic", "LD", "stx_hoho", 304239, 32, 32);
+						ReplaceTex("shooting1", "s_t1_line00", "Sonic", "LD", "s_t1_line00", 304242, 32, 32);
+						ReplaceTex("shooting1", "s_t1_line02", "Sonic", "LD", "s_t1_line02", 304243, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "LD", "stx_btest1_DC", 304300, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "LD", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "LD", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting1", "s_tr_sonsoko", "Sonic", "LD", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting1", "s_tr_sonwhite", "Sonic", "LD", "alltx_dwhite", 304306, 8, 8);
+						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "LD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting2", "stx_kutusoko0", "Sonic", "LD", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting2", "stx_kutusoko1", "Sonic", "LD", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting2", "stx_shoose4", "Sonic", "LD", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting2", "stx_shoose6", "Sonic", "LD", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting2", "s_soneye", "Sonic", "LD", "stx_eye2_DC", 304216, 16, 16);
+						ReplaceTex("shooting2", "s_t1_eye2", "Sonic", "LD", "s_t1_eye2", 304233, 32, 32);
+						ReplaceTex("shooting2", "s_t1_hoho", "Sonic", "LD", "stx_hoho", 304239, 32, 32);
+						ReplaceTex("shooting2", "s_t1_line00", "Sonic", "LD", "s_t1_line00", 304242, 32, 32);
+						ReplaceTex("shooting2", "s_t1_line02", "Sonic", "LD", "s_t1_line02", 304243, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "LD", "stx_btest1_DC", 304300, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "LD", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "LD", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting2", "s_tr_sonsoko", "Sonic", "LD", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting2", "s_tr_sonwhite", "Sonic", "LD", "alltx_dwhite", 304306, 8, 8);
 					}
 
 					else
@@ -263,7 +308,7 @@ extern "C"
 						ReplaceTex("shooting2", "stx_hara", "Sonic", "LD", "stx_hara", 304788, 64, 64);
 						ReplaceTex("shooting2", "stx_hoho", "Sonic", "LD", "stx_hoho", 304789, 64, 64);
 						ReplaceTex("shooting2", "ym_sjppse", "Sonic", "LD", "ym_sjppse", 304791, 128, 128);
-					}
+					}					
 				}
 
 				if (KindofTextDX == DreamcastT)
@@ -308,10 +353,39 @@ extern "C"
 					ReplaceTex("ev_tr2before_with_sonic", "stx_hara", "Sonic", "DXD", "stx_hara", 304788, 64, 64);
 					ReplaceTex("ev_tr2before_with_sonic", "stx_hoho", "Sonic", "DXD", "stx_hoho", 304789, 64, 64);
 					ReplaceTex("ev_tr2before_with_sonic", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304791, 128, 128);
-
+					
 					if (DCconversion)
 					{
-						return;
+						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting1", "stx_kutusoko0", "Sonic", "DXD", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting1", "stx_kutusoko1", "Sonic", "DXD", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting1", "stx_shoose4", "Sonic", "DXD", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting1", "stx_shoose6", "Sonic", "DXD", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting1", "s_soneye", "Sonic", "DXD", "stx_eye2_DC", 304216, 16, 16);
+						ReplaceTex("shooting1", "s_t1_eye2", "Sonic", "DXD", "s_t1_eye2", 304233, 32, 32);
+						ReplaceTex("shooting1", "s_t1_hoho", "Sonic", "DXD", "stx_hoho", 304239, 32, 32);
+						ReplaceTex("shooting1", "s_t1_line00", "Sonic", "DXD", "s_t1_line00", 304242, 32, 32);
+						ReplaceTex("shooting1", "s_t1_line02", "Sonic", "DXD", "s_t1_line02", 304243, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "DXD", "stx_btest1", 304300, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "DXD", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "DXD", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting1", "s_tr_sonsoko", "Sonic", "DXD", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting1", "s_tr_sonwhite", "Sonic", "DXD", "alltx_dwhite", 304306, 8, 8);
+						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting2", "stx_kutusoko0", "Sonic", "DXD", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting2", "stx_kutusoko1", "Sonic", "DXD", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting2", "stx_shoose4", "Sonic", "DXD", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting2", "stx_shoose6", "Sonic", "DXD", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting2", "s_soneye", "Sonic", "DXD", "stx_eye2_DC", 304216, 16, 16);
+						ReplaceTex("shooting2", "s_t1_eye2", "Sonic", "DXD", "s_t1_eye2", 304233, 32, 32);
+						ReplaceTex("shooting2", "s_t1_hoho", "Sonic", "DXD", "stx_hoho", 304239, 32, 32);
+						ReplaceTex("shooting2", "s_t1_line00", "Sonic", "DXD", "s_t1_line00", 304242, 32, 32);
+						ReplaceTex("shooting2", "s_t1_line02", "Sonic", "DXD", "s_t1_line02", 304243, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "DXD", "stx_btest1", 304300, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "DXD", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "DXD", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting2", "s_tr_sonsoko", "Sonic", "DXD", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting2", "s_tr_sonwhite", "Sonic", "DXD", "alltx_dwhite", 304306, 8, 8);
 					}
 
 					else
@@ -325,7 +399,7 @@ extern "C"
 						ReplaceTex("shooting1", "stx_eye2", "Sonic", "DXD", "stx_eye2", 304743, 64, 64);
 						ReplaceTex("shooting1", "stx_hara", "Sonic", "DXD", "stx_hara", 304744, 64, 64);
 						ReplaceTex("shooting1", "stx_hoho", "Sonic", "DXD", "stx_hoho", 304745, 64, 64);
-						ReplaceTex("shooting1", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304747, 128, 128);						
+						ReplaceTex("shooting1", "ym_sjppse", "Sonic", "DXD", "ym_sjppse", 304747, 128, 128);
 						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "DXD", "stx_kanagu", 304187, 32, 32);
 						ReplaceTex("shooting2", "s_anakage1", "Sonic", "DXD", "s_anakage1", 304755, 32, 32);
 						ReplaceTex("shooting2", "s_hando2", "Sonic", "DXD", "s_hando2", 304756, 32, 32);
@@ -345,33 +419,36 @@ extern "C"
 
 					if (DCconversion)
 					{
-						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DCWDX", "stx_kanagu", 304187, 32, 32);
-						ReplaceTex("shooting1", "stx_kutusoko0", "Sonic", "DCWDX", "stx_kutusoko0", 304188, 64, 64);
-						ReplaceTex("shooting1", "stx_kutusoko1", "Sonic", "DCWDX", "stx_kutusoko1", 304189, 64, 64);
-						ReplaceTex("shooting1", "stx_shoose4", "Sonic", "DCWDX", "stx_shoose4", 304190, 32, 32);
-						ReplaceTex("shooting1", "stx_shoose6", "Sonic", "DCWDX", "stx_shoose6", 304191, 32, 32);
-						ReplaceTex("shooting1", "s_soneye", "Sonic", "DCWDX", "stx_eye2", 304216, 16, 16);
-						ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "DCWDX", "stx_btest1", 304300, 32, 32);
-						ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "DCWDX", "s_tr_sonmimi", 304302, 32, 32);
-						ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "DCWDX", "stx_hada", 304304, 8, 8);
-						ReplaceTex("shooting1", "s_tr_sonsoko", "Sonic", "DCWDX", "s_tr_sonsoko", 304305, 64, 64);
-						ReplaceTex("shooting1", "s_tr_sonwhite", "Sonic", "DCWDX", "alltx_dwhite", 304306, 8, 8);
-						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "DCWDX", "stx_kanagu", 304187, 32, 32);
-						ReplaceTex("shooting2", "stx_kutusoko0", "Sonic", "DCWDX", "stx_kutusoko0", 304188, 64, 64);
-						ReplaceTex("shooting2", "stx_kutusoko1", "Sonic", "DCWDX", "stx_kutusoko1", 304189, 64, 64);
-						ReplaceTex("shooting2", "stx_shoose4", "Sonic", "DCWDX", "stx_shoose4", 304190, 32, 32);
-						ReplaceTex("shooting2", "stx_shoose6", "Sonic", "DCWDX", "stx_shoose6", 304191, 32, 32);
-						ReplaceTex("shooting2", "s_soneye", "Sonic", "DCWDX", "stx_eye2", 304216, 16, 16);
-						ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "DCWDX", "stx_btest1", 304300, 32, 32);
-						ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "DCWDX", "s_tr_sonmimi", 304302, 32, 32);
-						ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "DCWDX", "stx_hada", 304304, 8, 8);
-						ReplaceTex("shooting2", "s_tr_sonsoko", "Sonic", "DCWDX", "s_tr_sonsoko", 304305, 64, 64);
-						ReplaceTex("shooting2", "s_tr_sonwhite", "Sonic", "DCWDX", "alltx_dwhite", 304306, 8, 8);
-					}
-
-					else
-					{
-						return;
+						ReplaceTex("shooting1", "stx_kanagu", "Sonic", "DX", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting1", "stx_kutusoko0", "Sonic", "DX", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting1", "stx_kutusoko1", "Sonic", "DX", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting1", "stx_shoose4", "Sonic", "DX", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting1", "stx_shoose6", "Sonic", "DX", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting1", "s_soneye", "Sonic", "DX", "stx_eye2", 304216, 16, 16);
+						ReplaceTex("shooting1", "s_t1_eye2", "Sonic", "DX", "s_t1_eye2", 304233, 32, 32);
+						ReplaceTex("shooting1", "s_t1_hoho", "Sonic", "DX", "stx_hoho", 304239, 32, 32);
+						ReplaceTex("shooting1", "s_t1_line00", "Sonic", "DX", "s_t1_line00", 304242, 32, 32);
+						ReplaceTex("shooting1", "s_t1_line02", "Sonic", "DX", "s_t1_line02", 304243, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonblue", "Sonic", "DX", "stx_btest1", 304300, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonmimi", "Sonic", "DX", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting1", "s_tr_sonskin", "Sonic", "DX", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting1", "s_tr_sonsoko", "Sonic", "DX", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting1", "s_tr_sonwhite", "Sonic", "DX", "alltx_dwhite", 304306, 8, 8);
+						ReplaceTex("shooting2", "stx_kanagu", "Sonic", "DX", "stx_kanagu", 304187, 32, 32);
+						ReplaceTex("shooting2", "stx_kutusoko0", "Sonic", "DX", "stx_kutusoko0", 304188, 64, 64);
+						ReplaceTex("shooting2", "stx_kutusoko1", "Sonic", "DX", "stx_kutusoko1", 304189, 64, 64);
+						ReplaceTex("shooting2", "stx_shoose4", "Sonic", "DX", "stx_shoose4", 304190, 32, 32);
+						ReplaceTex("shooting2", "stx_shoose6", "Sonic", "DX", "stx_shoose6", 304191, 32, 32);
+						ReplaceTex("shooting2", "s_soneye", "Sonic", "DX", "stx_eye2", 304216, 16, 16);
+						ReplaceTex("shooting2", "s_t1_eye2", "Sonic", "DX", "s_t1_eye2", 304233, 32, 32);
+						ReplaceTex("shooting2", "s_t1_hoho", "Sonic", "DX", "stx_hoho", 304239, 32, 32);
+						ReplaceTex("shooting2", "s_t1_line00", "Sonic", "DX", "s_t1_line00", 304242, 32, 32);
+						ReplaceTex("shooting2", "s_t1_line02", "Sonic", "DX", "s_t1_line02", 304243, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonblue", "Sonic", "DX", "stx_btest1", 304300, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonmimi", "Sonic", "DX", "s_tr_sonmimi", 304302, 32, 32);
+						ReplaceTex("shooting2", "s_tr_sonskin", "Sonic", "DX", "stx_hada", 304304, 8, 8);
+						ReplaceTex("shooting2", "s_tr_sonsoko", "Sonic", "DX", "s_tr_sonsoko", 304305, 64, 64);
+						ReplaceTex("shooting2", "s_tr_sonwhite", "Sonic", "DX", "alltx_dwhite", 304306, 8, 8);
 					}
 				}
 			}
@@ -506,6 +583,7 @@ extern "C"
 				if (KindofTextDX == LikeDream)
 				{
 					ReplacePVM("Miles", "Miles_ld");
+					ReplacePVM("DXR_MILES", "Miles_ld");
 					ReplaceTex("ev_tr1_with_sonic", "mtx_body01", "Tails", "LD", "mtx_body01", 304700, 64, 64);
 					ReplaceTex("ev_tr1_with_sonic", "mtx_eye", "Tails", "LD", "mtx_eye", 304701, 16, 16);
 					ReplaceTex("ev_tr1_with_sonic", "mtx_hand01", "Tails", "LD", "mtx_hand01", 304702, 64, 64);
@@ -527,21 +605,40 @@ extern "C"
 					ReplaceTex("m_tr_p", "mtx_body01", "Tails", "LD", "mtx_body01", 9050000, 64, 64);
 					ReplaceTex("m_tr_p", "mtx_eye", "Tails", "LD", "mtx_eye", 9050001, 16, 16);
 					ReplaceTex("m_tr_p", "mtx_hand01", "Tails", "LD", "mtx_hand01", 9050002, 64, 64);
-					ReplaceTex("shooting1", "mtx_body01", "Tails", "LD", "mtx_body01", 304700, 64, 64);
-					ReplaceTex("shooting1", "mtx_eye", "Tails", "LD", "mtx_eye", 304701, 16, 16);
-					ReplaceTex("shooting1", "mtx_hand01", "Tails", "LD", "mtx_hand01", 304702, 64, 64);
-					ReplaceTex("shooting1", "mtx_head01", "Tails", "LD", "mtx_head01", 304703, 64, 64);
-					ReplaceTex("shooting1", "mtx_white", "Tails", "LD", "mtx_white", 304704, 8, 8);
-					ReplaceTex("shooting2", "mtx_body01", "Tails", "LD", "mtx_body01", 304750, 64, 64);
-					ReplaceTex("shooting2", "mtx_eye", "Tails", "LD", "mtx_eye", 304751, 16, 16);
-					ReplaceTex("shooting2", "mtx_hand01", "Tails", "LD", "mtx_hand01", 304752, 64, 64);
-					ReplaceTex("shooting2", "mtx_head01", "Tails", "LD", "mtx_head01", 304753, 64, 64);
-					ReplaceTex("shooting2", "mtx_white", "Tails", "LD", "mtx_white", 304754, 8, 8);
+
+					if (DCconversion)
+					{
+						ReplaceTex("shooting1", "s_t1_m_eye", "Tails", "LD", "s_t1_m_eye", 304244, 64, 64);
+						ReplaceTex("shooting1", "s_t1_m_mune", "Tails", "LD", "s_t1_m_mune", 304245, 64, 64);
+						ReplaceTex("shooting1", "s_tileye", "Tails", "LD", "mtx_eye3", 304299, 16, 16);
+						ReplaceTex("shooting1", "s_tr_tailmimi", "Tails", "LD", "s_tr_tailmimi", 304307, 32, 32);
+						ReplaceTex("shooting1", "s_tr_tailorge", "Tails", "LD", "mtx_yellow0", 304308, 32, 32);
+						ReplaceTex("shooting2", "s_t1_m_eye", "Tails", "LD", "s_t1_m_eye", 304244, 64, 64);
+						ReplaceTex("shooting2", "s_t1_m_mune", "Tails", "LD", "s_t1_m_mune", 304245, 64, 64);
+						ReplaceTex("shooting2", "s_tileye", "Tails", "LD", "mtx_eye3", 304299, 16, 16);
+						ReplaceTex("shooting2", "s_tr_tailmimi", "Tails", "LD", "s_tr_tailmimi", 304307, 32, 32);
+						ReplaceTex("shooting2", "s_tr_tailorge", "Tails", "LD", "mtx_yellow0", 304308, 32, 32);
+					}
+
+					else
+					{
+						ReplaceTex("shooting1", "mtx_body01", "Tails", "LD", "mtx_body01", 304700, 64, 64);
+						ReplaceTex("shooting1", "mtx_eye", "Tails", "LD", "mtx_eye", 304701, 16, 16);
+						ReplaceTex("shooting1", "mtx_hand01", "Tails", "LD", "mtx_hand01", 304702, 64, 64);
+						ReplaceTex("shooting1", "mtx_head01", "Tails", "LD", "mtx_head01", 304703, 64, 64);
+						ReplaceTex("shooting1", "mtx_white", "Tails", "LD", "mtx_white", 304704, 8, 8);
+						ReplaceTex("shooting2", "mtx_body01", "Tails", "LD", "mtx_body01", 304750, 64, 64);
+						ReplaceTex("shooting2", "mtx_eye", "Tails", "LD", "mtx_eye", 304751, 16, 16);
+						ReplaceTex("shooting2", "mtx_hand01", "Tails", "LD", "mtx_hand01", 304752, 64, 64);
+						ReplaceTex("shooting2", "mtx_head01", "Tails", "LD", "mtx_head01", 304753, 64, 64);
+						ReplaceTex("shooting2", "mtx_white", "Tails", "LD", "mtx_white", 304754, 8, 8);
+					}					
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Miles", "Miles_dxd");
+					ReplacePVM("DXR_MILES", "Miles_dxd");
 					ReplaceTex("ev_tr1_with_sonic", "mtx_body01", "Tails", "DXD", "mtx_body01", 304700, 64, 64);
 					ReplaceTex("ev_tr1_with_sonic", "mtx_eye", "Tails", "DXD", "mtx_eye", 304701, 16, 16);
 					ReplaceTex("ev_tr1_with_sonic", "mtx_hand01", "Tails", "DXD", "mtx_hand01", 304702, 64, 64);
@@ -563,21 +660,54 @@ extern "C"
 					ReplaceTex("m_tr_p", "mtx_body01", "Tails", "DXD", "mtx_body01", 9050000, 64, 64);
 					ReplaceTex("m_tr_p", "mtx_eye", "Tails", "DXD", "mtx_eye", 9050001, 16, 16);
 					ReplaceTex("m_tr_p", "mtx_hand01", "Tails", "DXD", "mtx_hand01", 9050002, 64, 64);
-					ReplaceTex("shooting1", "mtx_body01", "Tails", "DXD", "mtx_body01", 304700, 64, 64);
-					ReplaceTex("shooting1", "mtx_eye", "Tails", "DXD", "mtx_eye", 304701, 16, 16);
-					ReplaceTex("shooting1", "mtx_hand01", "Tails", "DXD", "mtx_hand01", 304702, 64, 64);
-					ReplaceTex("shooting1", "mtx_head01", "Tails", "DXD", "mtx_head01", 304703, 64, 64);
-					ReplaceTex("shooting1", "mtx_white", "Tails", "DXD", "mtx_white", 304704, 8, 8);
-					ReplaceTex("shooting2", "mtx_body01", "Tails", "DXD", "mtx_body01", 304750, 64, 64);
-					ReplaceTex("shooting2", "mtx_eye", "Tails", "DXD", "mtx_eye", 304751, 16, 16);
-					ReplaceTex("shooting2", "mtx_hand01", "Tails", "DXD", "mtx_hand01", 304752, 64, 64);
-					ReplaceTex("shooting2", "mtx_head01", "Tails", "DXD", "mtx_head01", 304753, 64, 64);
-					ReplaceTex("shooting2", "mtx_white", "Tails", "DXD", "mtx_white", 304754, 8, 8);
+
+					if (DCconversion)
+					{
+						ReplaceTex("shooting1", "s_t1_m_eye", "Tails", "DXD", "s_t1_m_eye", 304244, 64, 64);
+						ReplaceTex("shooting1", "s_t1_m_mune", "Tails", "DXD", "s_t1_m_mune", 304245, 64, 64);
+						ReplaceTex("shooting1", "s_tileye", "Tails", "DXD", "mtx_eye3", 304299, 16, 16);
+						ReplaceTex("shooting1", "s_tr_tailmimi", "Tails", "DXD", "s_tr_tailmimi", 304307, 32, 32);
+						ReplaceTex("shooting1", "s_tr_tailorge", "Tails", "DXD", "mtx_yellow0", 304308, 32, 32);
+						ReplaceTex("shooting2", "s_t1_m_eye", "Tails", "DXD", "s_t1_m_eye", 304244, 64, 64);
+						ReplaceTex("shooting2", "s_t1_m_mune", "Tails", "DXD", "s_t1_m_mune", 304245, 64, 64);
+						ReplaceTex("shooting2", "s_tileye", "Tails", "DXD", "mtx_eye3", 304299, 16, 16);
+						ReplaceTex("shooting2", "s_tr_tailmimi", "Tails", "DXD", "s_tr_tailmimi", 304307, 32, 32);
+						ReplaceTex("shooting2", "s_tr_tailorge", "Tails", "DXD", "mtx_yellow0", 304308, 32, 32);
+					}
+
+					else
+					{
+						ReplaceTex("shooting1", "mtx_body01", "Tails", "DXD", "mtx_body01", 304700, 64, 64);
+						ReplaceTex("shooting1", "mtx_eye", "Tails", "DXD", "mtx_eye", 304701, 16, 16);
+						ReplaceTex("shooting1", "mtx_hand01", "Tails", "DXD", "mtx_hand01", 304702, 64, 64);
+						ReplaceTex("shooting1", "mtx_head01", "Tails", "DXD", "mtx_head01", 304703, 64, 64);
+						ReplaceTex("shooting1", "mtx_white", "Tails", "DXD", "mtx_white", 304704, 8, 8);
+						ReplaceTex("shooting2", "mtx_body01", "Tails", "DXD", "mtx_body01", 304750, 64, 64);
+						ReplaceTex("shooting2", "mtx_eye", "Tails", "DXD", "mtx_eye", 304751, 16, 16);
+						ReplaceTex("shooting2", "mtx_hand01", "Tails", "DXD", "mtx_hand01", 304752, 64, 64);
+						ReplaceTex("shooting2", "mtx_head01", "Tails", "DXD", "mtx_head01", 304753, 64, 64);
+						ReplaceTex("shooting2", "mtx_white", "Tails", "DXD", "mtx_white", 304754, 8, 8);
+					}					
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("Miles", "Miles_dx");
+					ReplacePVM("DXR_MILES", "Miles_dx");
+
+					if (DCconversion)
+					{
+						ReplaceTex("shooting1", "s_t1_m_eye", "Tails", "DX", "s_t1_m_eye", 304244, 64, 64);
+						ReplaceTex("shooting1", "s_t1_m_mune", "Tails", "DX", "s_t1_m_mune", 304245, 64, 64);
+						ReplaceTex("shooting1", "s_tileye", "Tails", "DX", "mtx_eye3", 304299, 16, 16);
+						ReplaceTex("shooting1", "s_tr_tailmimi", "Tails", "DX", "s_tr_tailmimi", 304307, 32, 32);
+						ReplaceTex("shooting1", "s_tr_tailorge", "Tails", "DX", "mtx_yellow0", 304308, 32, 32);
+						ReplaceTex("shooting2", "s_t1_m_eye", "Tails", "DX", "s_t1_m_eye", 304244, 64, 64);
+						ReplaceTex("shooting2", "s_t1_m_mune", "Tails", "DX", "s_t1_m_mune", 304245, 64, 64);
+						ReplaceTex("shooting2", "s_tileye", "Tails", "DX", "mtx_eye3", 304299, 16, 16);
+						ReplaceTex("shooting2", "s_tr_tailmimi", "Tails", "DX", "s_tr_tailmimi", 304307, 32, 32);
+						ReplaceTex("shooting2", "s_tr_tailorge", "Tails", "DX", "mtx_yellow0", 304308, 32, 32);
+					}
 				}
 			}
 		}
@@ -606,16 +736,19 @@ extern "C"
 				if (KindofTextDX == LikeDream)
 				{
 					ReplacePVM("Knuckles", "Knuckles_ld");
+					ReplacePVM("DXR_KNU", "Knuckles_ld");
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Knuckles", "Knuckles_dxd");
+					ReplacePVM("DXR_KNU", "Knuckles_dxd");
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("Knuckles", "Knuckles_dx");
+					ReplacePVM("DXR_KNU", "Knuckles_dx");
 				}
 			}
 		}
@@ -686,16 +819,19 @@ extern "C"
 				if (KindofTextDX == LikeDream)
 				{
 					ReplacePVM("Amy", "Amy_ld");
+					ReplacePVM("DXR_AMY", "Amy_ld");
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Amy", "Amy_dxd");
+					ReplacePVM("DXR_AMY", "Amy_dxd");
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("Amy", "Amy_dx");
+					ReplacePVM("DXR_AMY", "Amy_dx");
 					ReplaceTex("amy_eggrobo", "atx_hada", "Amy", "DCWDX", "atx_hada", 600719, 8, 8);
 					ReplaceTex("amy_eggrobo", "alltx_dwhite", "Amy", "DCWDX", "alltx_dwhite", 600720, 8, 8);
 					ReplaceTex("amy_eggrobo", "atx_eri", "Amy", "DCWDX", "atx_eri", 600721, 8, 8);
@@ -794,16 +930,19 @@ extern "C"
 				if (KindofTextDX == LikeDream)
 				{
 					ReplacePVM("Big", "Big_ld");
+					ReplacePVM("DXR_BIG", "Big_ld");
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Big", "Big_dxd");
+					ReplacePVM("DXR_BIG", "Big_dxd");
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("Big", "Big_dx");
+					ReplacePVM("DXR_BIG", "Big_dx");
 					ReplaceTex("ev_tr2_big", "b_beruto3", "Big", "DCWDX", "b_beruto3", 600344, 32, 32);
 					ReplaceTex("ev_tr2_big", "b_beruto", "Big", "DCWDX", "b_beruto", 600345, 32, 32);
 					ReplaceTex("ev_tr2_big", "b_beruto5", "Big", "DCWDX", "b_beruto5", 600346, 32, 32);
@@ -913,17 +1052,20 @@ extern "C"
 					if (Consistency == true)
 					{
 						ReplacePVM("Tikal", "tikal_dxldc");
+						ReplacePVM("DXR_TIKAL", "tikal_dxldc");
 					}
 
 					else
 					{
 						ReplacePVM("Tikal", "Tikal_ld");
+						ReplacePVM("DXR_TIKAL", "tikal_ld");
 					}
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Tikal", "Tikal_dxd");
+					ReplacePVM("DXR_TIKAL", "tikal_dxd");
 				}
 
 				if (KindofTextDX == OriginalDX)
@@ -931,11 +1073,13 @@ extern "C"
 					if (Consistency == true)
 					{
 						ReplacePVM("Tikal", "tikal_dxlsa2");
+						ReplacePVM("DXR_TIKAL", "tikal_dxlsa2");
 					}
 
 					else
 					{
 						ReplacePVM("Tikal", "Tikal_dx");
+						ReplacePVM("DXR_TIKAL", "tikal_dx");
 					}
 				}
 			}
