@@ -1422,6 +1422,17 @@ extern "C"
 							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXLDC", "kan_y_dx", 600166, 64, 64);
 							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXLDC", "s_hando2", 600140, 32, 32);
 							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXLDC", "s_testhand", 600169, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXLDC", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXLDC", "e_hige", 710304, 32, 32);
+							ReplaceTex("mrace_eggmoble", "eghada", "Eggman", "DXLDC", "eghada", 710309, 8, 8);
+							ReplaceTex("mrace_eggmoble", "eghana", "Eggman", "DXLDC", "eghana", 710310, 8, 8);
+							ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXLDC", "kan_m", 710313, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_s", "Eggman", "DXLDC", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_y", "Eggman", "DXLDC", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXLDC", "s_hando2", 710316, 32, 32);
+							ReplaceTex("mrace_eggmoble", "s_testhand", "Eggman", "DXLDC", "s_testhand", 710317, 32, 32);
 						}
 
 						else
@@ -1548,6 +1559,17 @@ extern "C"
 							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "LD", "kan_y_dx", 600166, 64, 64);
 							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "LD", "s_hando2", 600140, 32, 32);
 							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "LD", "s_testhand", 600169, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "LD", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "LD", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "LD", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "LD", "e_hige", 710304, 32, 32);
+							ReplaceTex("mrace_eggmoble", "eghada", "Eggman", "LD", "eghada", 710309, 8, 8);
+							ReplaceTex("mrace_eggmoble", "eghana", "Eggman", "LD", "eghana", 710310, 8, 8);
+							ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "LD", "kan_m", 710313, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_s", "Eggman", "LD", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_y", "Eggman", "LD", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "LD", "s_hando2", 710316, 32, 32);
+							ReplaceTex("mrace_eggmoble", "s_testhand", "Eggman", "LD", "s_testhand", 710317, 32, 32);
 						}
 
 						else
@@ -1682,6 +1704,19 @@ extern "C"
 						ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXD", "kan_y_dx", 600166, 64, 64);
 						ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXD", "s_hando2", 600140, 32, 32);
 						ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXD", "s_testhand", 600169, 32, 32);
+						ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXD", "e_fuku01", 710300, 32, 32);
+						ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXD", "e_fuku02_dx", 710301, 64, 64);
+						ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXD", "e_fuku04", 710303, 32, 32);
+						ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXD", "e_hige", 710304, 32, 32);
+						ReplaceTex("mrace_eggmoble", "e_kutu02", "Eggman", "DXD", "e_kutu02", 710307, 16, 16);
+						ReplaceTex("mrace_eggmoble", "eghada", "Eggman", "DXD", "eghada", 710309, 8, 8);
+						ReplaceTex("mrace_eggmoble", "eghana", "Eggman", "DXD", "eghana", 710310, 8, 8);
+						ReplaceTex("mrace_eggmoble", "egsiro", "Eggman", "DXD", "kan_s", 710311, 64, 64);
+						ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXD", "kan_m", 710313, 64, 64);
+						ReplaceTex("mrace_eggmoble", "kan_s", "Eggman", "DXD", "kan_s_dx", 710314, 64, 64);
+						ReplaceTex("mrace_eggmoble", "kan_y", "Eggman", "DXD", "kan_y_dx", 710315, 64, 64);
+						ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXD", "s_hando2", 710316, 32, 32);
+						ReplaceTex("mrace_eggmoble", "s_testhand", "Eggman", "DXD", "s_testhand", 710317, 32, 32);
 					}
 
 					else
@@ -1769,6 +1804,7 @@ extern "C"
 							ReplacePVM("egm2_common", "egm2_common_dx");
 							ReplacePVM("egm3mdl", "egm3mdl_dx");
 							ReplacePVM("ev_eggmoble0", "ev_eggmoble0_dx");
+							ReplacePVM("mrace_eggmoble", "mrace_eggmoble_dx");
 						}
 
 						else
