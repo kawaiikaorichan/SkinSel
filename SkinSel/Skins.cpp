@@ -71,6 +71,7 @@ extern "C"
 		HMODULE DCcharacters = GetModuleHandle(L"SA1_Chars");
 		HMODULE DCconversion = GetModuleHandle(L"DCMods_Main");
 		HMODULE DXcharsR = GetModuleHandle(L"SADXR");
+		HMODULE DXconsistent = GetModuleHandle(L"DX_missing_models");
 
 		if (EnableSonic)
 		{
@@ -820,39 +821,135 @@ extern "C"
 				{
 					ReplacePVM("Amy", "Amy_ld");
 					ReplacePVM("DXR_AMY", "Amy_ld");
+					if (DXconsistent)
+					{
+						ReplaceTex("amy_eggrobo", "atx_body", "Amy", "LD", "atx_body", 1500, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "LD", "atx_eye02", 1507, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_face", "Amy", "LD", "atx_face", 1508, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_hand01", "Amy", "LD", "atx_hand01", 1510, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_hand02", "Amy", "LD", "atx_hand02", 1511, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_head", "Amy", "LD", "atx_head", 1514, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring_dx", "Amy", "LD", "atx_ring_dx", 1519, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_shoose", "Amy", "LD", "atx_shoose", 1520, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx-cleanshoe", "Amy", "LD", "atx-cleanshoe", 1532, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "LD", "atx_eye02", 1507, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "LD", "atx_ring", 600739, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye00_DC", "Amy", "LD", "atx_eye02", 1541, 16, 16);
+					}
+					else if (DXcharsR)
+					{
+						ReplaceTex("amy_eggrobo", "atx_body", "Amy", "LD", "atx_body", 600719, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "LD", "atx_eye02", 600721, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_face", "Amy", "LD", "atx_face", 600722, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_hand01", "Amy", "LD", "atx_hand01", 600723, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_hand02", "Amy", "LD", "atx_hand02", 600724, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_head", "Amy", "LD", "atx_head", 600725, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "LD", "atx_ring_dx", 600729, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_shoose", "Amy", "LD", "atx_shoose", 600730, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx-cleanshoe", "Amy", "LD", "atx-cleanshoe", 600731, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye2x", "Amy", "LD", "atx_eye02", 600732, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_ring_DC", "Amy", "LD", "atx_ring", 600733, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye02_DC", "Amy", "LD", "atx_eye02", 600735, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye2x_DC", "Amy", "LD", "atx_eye02", 600736, 16, 16);
+					}
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Amy", "Amy_dxd");
 					ReplacePVM("DXR_AMY", "Amy_dxd");
+					if (DXconsistent)
+					{
+						ReplaceTex("amy_eggrobo", "atx_body", "Amy", "DXD", "atx_body", 1500, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "DXD", "atx_eye02", 1507, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_face", "Amy", "DXD", "atx_face", 1508, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_hand01", "Amy", "DXD", "atx_hand01", 1510, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_hand02", "Amy", "DXD", "atx_hand02", 1511, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_head", "Amy", "DXD", "atx_head", 1514, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring_dx", "Amy", "DXD", "atx_ring_dx", 1519, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_shoose", "Amy", "DXD", "atx_shoose", 1520, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx-cleanshoe", "Amy", "DXD", "atx-cleanshoe", 1532, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "DXD", "atx_eye02", 1507, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "DXD", "atx_ring", 600739, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye00_DC", "Amy", "DXD", "atx_eye02", 1541, 16, 16);
+					}
+					else if (DXcharsR)
+					{
+						ReplaceTex("amy_eggrobo", "atx_body", "Amy", "DXD", "atx_body", 600719, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "DXD", "atx_eye02", 600721, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_face", "Amy", "DXD", "atx_face", 600722, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_hand01", "Amy", "DXD", "atx_hand01", 600723, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_hand02", "Amy", "DXD", "atx_hand02", 600724, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_head", "Amy", "DXD", "atx_head", 600725, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "DXD", "atx_ring_dx", 600729, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_shoose", "Amy", "DXD", "atx_shoose", 600730, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx-cleanshoe", "Amy", "DXD", "atx-cleanshoe", 600731, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye2x", "Amy", "DXD", "atx_eye02", 600732, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_ring_DC", "Amy", "DXD", "atx_ring", 600733, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye02_DC", "Amy", "DXD", "atx_eye02", 600735, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye2x_DC", "Amy", "DXD", "atx_eye02", 600736, 16, 16);
+					}
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("Amy", "Amy_dx");
 					ReplacePVM("DXR_AMY", "Amy_dx");
-					ReplaceTex("amy_eggrobo", "atx_hada", "Amy", "DCWDX", "atx_hada", 600719, 8, 8);
-					ReplaceTex("amy_eggrobo", "alltx_dwhite", "Amy", "DCWDX", "alltx_dwhite", 600720, 8, 8);
-					ReplaceTex("amy_eggrobo", "atx_eri", "Amy", "DCWDX", "atx_eri", 600721, 8, 8);
-					ReplaceTex("amy_eggrobo", "atx_eye00", "Amy", "DCWDX", "atx_eye00", 600722, 16, 16);
-					ReplaceTex("amy_eggrobo", "atx_fuku0", "Amy", "DCWDX", "atx_fuku0", 600723, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_fuku1", "Amy", "DCWDX", "atx_fuku1", 600724, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_fuku2", "Amy", "DCWDX", "atx_fuku2", 600725, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_fuku3", "Amy", "DCWDX", "atx_fuku3", 600725, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_fuku4", "Amy", "DCWDX", "atx_fuku4", 600727, 32, 32);
-					ReplaceTex("amy_eggrobo", "a_weye", "Amy", "DCWDX", "a_weye", 600728, 8, 8);
-					ReplaceTex("amy_eggrobo", "atx_inner0", "Amy", "DCWDX", "atx_inner0", 600729, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_kazari", "Amy", "DCWDX", "atx_kazari", 600730, 16, 16);
-					ReplaceTex("amy_eggrobo", "atx_kutu0", "Amy", "DCWDX", "atx_kutu0", 600731, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_kutu1", "Amy", "DCWDX", "atx_kutu1", 600732, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_kutu2", "Amy", "DCWDX", "atx_kutu2", 600733, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_kutu3", "Amy", "DCWDX", "atx_kutu3", 600734, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_kutu4", "Amy", "DCWDX", "atx_kutu4", 600735, 32, 32);
-					ReplaceTex("amy_eggrobo", "atx_pink0", "Amy", "DCWDX", "atx_pink0", 600738, 64, 64);
-					ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "DCWDX", "atx_ring", 600739, 16, 16);
-					ReplaceTex("amy_eggrobo", "s_hando2", "Amy", "DCWDX", "s_hando2", 600740, 32, 32);
-					ReplaceTex("amy_eggrobo", "s_testhand", "Amy", "DCWDX", "s_testhand", 600741, 64, 64);
+					if (DXconsistent)
+					{
+						ReplaceTex("amy_eggrobo", "atx_body", "Amy", "DX", "atx_body", 1500, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "DX", "atx_eye02", 1507, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_face", "Amy", "DX", "atx_face", 1508, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_hand01", "Amy", "DX", "atx_hand01", 1510, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_hand02", "Amy", "DX", "atx_hand02", 1511, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_head", "Amy", "DX", "atx_head", 1514, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring_dx", "Amy", "DX", "atx_ring_dx", 1519, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_shoose", "Amy", "DX", "atx_shoose", 1520, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx-cleanshoe", "Amy", "DX", "atx-cleanshoe", 1532, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "DX", "atx_eye02", 1507, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "DX", "atx_ring", 600739, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye00_DC", "Amy", "DX", "atx_eye02", 1541, 16, 16);
+					}
+					else if (DXcharsR)
+					{
+						ReplaceTex("amy_eggrobo", "atx_body", "Amy", "DX", "atx_body", 600719, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye02", "Amy", "DX", "atx_eye02", 600721, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_face", "Amy", "DX", "atx_face", 600722, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_hand01", "Amy", "DX", "atx_hand01", 600723, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_hand02", "Amy", "DX", "atx_hand02", 600724, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_head", "Amy", "DX", "atx_head", 600725, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "DX", "atx_ring_dx", 600729, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_shoose", "Amy", "DX", "atx_shoose", 600730, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx-cleanshoe", "Amy", "DX", "atx-cleanshoe", 600731, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_eye2x", "Amy", "DX", "atx_eye02", 600732, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_ring_DC", "Amy", "DX", "atx_ring", 600733, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye02_DC", "Amy", "DX", "atx_eye02", 600735, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_eye2x_DC", "Amy", "DX", "atx_eye02", 600736, 16, 16);
+					}
+					else
+					{
+						ReplaceTex("amy_eggrobo", "atx_hada", "Amy", "DCWDX", "atx_hada", 600719, 8, 8);
+						ReplaceTex("amy_eggrobo", "alltx_dwhite", "Amy", "DCWDX", "alltx_dwhite", 600720, 8, 8);
+						ReplaceTex("amy_eggrobo", "atx_eri", "Amy", "DCWDX", "atx_eri", 600721, 8, 8);
+						ReplaceTex("amy_eggrobo", "atx_eye00", "Amy", "DCWDX", "atx_eye00", 600722, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_fuku0", "Amy", "DCWDX", "atx_fuku0", 600723, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_fuku1", "Amy", "DCWDX", "atx_fuku1", 600724, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_fuku2", "Amy", "DCWDX", "atx_fuku2", 600725, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_fuku3", "Amy", "DCWDX", "atx_fuku3", 600725, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_fuku4", "Amy", "DCWDX", "atx_fuku4", 600727, 32, 32);
+						ReplaceTex("amy_eggrobo", "a_weye", "Amy", "DCWDX", "a_weye", 600728, 8, 8);
+						ReplaceTex("amy_eggrobo", "atx_inner0", "Amy", "DCWDX", "atx_inner0", 600729, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_kazari", "Amy", "DCWDX", "atx_kazari", 600730, 16, 16);
+						ReplaceTex("amy_eggrobo", "atx_kutu0", "Amy", "DCWDX", "atx_kutu0", 600731, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_kutu1", "Amy", "DCWDX", "atx_kutu1", 600732, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_kutu2", "Amy", "DCWDX", "atx_kutu2", 600733, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_kutu3", "Amy", "DCWDX", "atx_kutu3", 600734, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_kutu4", "Amy", "DCWDX", "atx_kutu4", 600735, 32, 32);
+						ReplaceTex("amy_eggrobo", "atx_pink0", "Amy", "DCWDX", "atx_pink0", 600738, 64, 64);
+						ReplaceTex("amy_eggrobo", "atx_ring", "Amy", "DCWDX", "atx_ring", 600739, 16, 16);
+						ReplaceTex("amy_eggrobo", "s_hando2", "Amy", "DCWDX", "s_hando2", 600740, 32, 32);
+						ReplaceTex("amy_eggrobo", "s_testhand", "Amy", "DCWDX", "s_testhand", 600741, 64, 64);
+					}					
 				}
 			}
 		}
@@ -971,14 +1068,14 @@ extern "C"
 				if (KindofTextDC == LikeDX)
 				{
 					ReplacePVM("Metalsonic", "Metalsonic_ldx");
-					ReplaceTex("ev_s_msbody", "mrd_032s_msana", "Big", "LDX", "mrd_032s_msana", 219002, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_032s_mseye", "Big", "LDX", "mrd_032s_mseye", 219004, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msblack", "Big", "LDX", "mrd_064s_msblack", 219005, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msblue", "Big", "LDX", "mrd_064s_msblue", 219006, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msred", "Big", "LDX", "mrd_064s_msred", 219007, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msslv", "Big", "LDX", "mrd_064s_msslv", 219008, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_mswhite", "Big", "LDX", "mrd_064s_mswhite", 219009, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msyelw", "Big", "LDX", "mrd_064s_msyelw", 219010, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_032s_msana", "MetalSonic", "LDX", "mrd_032s_msana", 219002, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_032s_mseye", "MetalSonic", "LDX", "mrd_032s_mseye", 219004, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msblack", "MetalSonic", "LDX", "mrd_064s_msblack", 219005, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msblue", "MetalSonic", "LDX", "mrd_064s_msblue", 219006, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msred", "MetalSonic", "LDX", "mrd_064s_msred", 219007, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msslv", "MetalSonic", "LDX", "mrd_064s_msslv", 219008, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_mswhite", "MetalSonic", "LDX", "mrd_064s_mswhite", 219009, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msyelw", "MetalSonic", "LDX", "mrd_064s_msyelw", 219010, 32, 32);
 				}
 
 				if (KindofTextDC == OriginalDC)
@@ -989,14 +1086,14 @@ extern "C"
 				if (KindofTextDC == DXT)
 				{
 					ReplacePVM("Metalsonic", "Metalsonic_DCWDX");
-					ReplaceTex("ev_s_msbody", "mrd_032s_msana", "Big", "DCWDX", "mrd_032s_msana", 219002, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_032s_mseye", "Big", "DCWDX", "mrd_032s_mseye", 219004, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msblack", "Big", "DCWDX", "mrd_064s_msblack", 219005, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msblue", "Big", "DCWDX", "mrd_064s_msblue", 219006, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msred", "Big", "DCWDX", "mrd_064s_msred", 219007, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msslv", "Big", "DCWDX", "mrd_064s_msslv", 219008, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_mswhite", "Big", "DCWDX", "mrd_064s_mswhite", 219009, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msyelw", "Big", "DCWDX", "mrd_064s_msyelw", 219010, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_032s_msana", "MetalSonic", "DCWDX", "mrd_032s_msana", 219002, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_032s_mseye", "MetalSonic", "DCWDX", "mrd_032s_mseye", 219004, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msblack", "MetalSonic", "DCWDX", "mrd_064s_msblack", 219005, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msblue", "MetalSonic", "DCWDX", "mrd_064s_msblue", 219006, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msred", "MetalSonic", "DCWDX", "mrd_064s_msred", 219007, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msslv", "MetalSonic", "DCWDX", "mrd_064s_msslv", 219008, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_mswhite", "MetalSonic", "DCWDX", "mrd_064s_mswhite", 219009, 32, 32);
+					ReplaceTex("ev_s_msbody", "mrd_064s_msyelw", "MetalSonic", "DCWDX", "mrd_064s_msyelw", 219010, 32, 32);
 				}
 			}
 			else
@@ -1004,24 +1101,57 @@ extern "C"
 				if (KindofTextDX == LikeDream)
 				{
 					ReplacePVM("Metalsonic", "Metalsonic_ld");
+					if (DXconsistent)
+					{
+						ReplaceTex("ev_s_msbody", "mstx_body0", "MetalSonic", "LD", "mstx_body0", 1300001, 64, 64);
+						ReplaceTex("ev_s_msbody", "mstx_body1", "MetalSonic", "LD", "mstx_body1", 1300002, 16, 16);
+						ReplaceTex("ev_s_msbody", "mstx_ref0", "MetalSonic", "LD", "mstx_ref0", 1300003, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref1", "MetalSonic", "LD", "mstx_ref1", 1300004, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref2", "MetalSonic", "LD", "mstx_ref2", 1300005, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref3", "MetalSonic", "LD", "mstx_ref3", 1300006, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref5", "MetalSonic", "LD", "mstx_ref5", 1300007, 32, 32);
+					}
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Metalsonic", "Metalsonic_dxd");
+					if (DXconsistent)
+					{
+						ReplaceTex("ev_s_msbody", "mstx_body0", "MetalSonic", "DXD", "mstx_body0", 1300001, 64, 64);
+						ReplaceTex("ev_s_msbody", "mstx_body1", "MetalSonic", "DXD", "mstx_body1", 1300002, 16, 16);
+						ReplaceTex("ev_s_msbody", "mstx_ref0", "MetalSonic", "DXD", "mstx_ref0", 1300003, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref1", "MetalSonic", "DXD", "mstx_ref1", 1300004, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref2", "MetalSonic", "DXD", "mstx_ref2", 1300005, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref3", "MetalSonic", "DXD", "mstx_ref3", 1300006, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref5", "MetalSonic", "DXD", "mstx_ref5", 1300007, 32, 32);
+					}
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					ReplacePVM("Metalsonic", "Metalsonic_dx");
-					ReplaceTex("ev_s_msbody", "mrd_032s_msana", "Big", "DCWDX", "mrd_032s_msana", 219002, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_032s_mseye", "Big", "DCWDX", "mrd_032s_mseye", 219004, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msblack", "Big", "DCWDX", "mrd_064s_msblack", 219005, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msblue", "Big", "DCWDX", "mrd_064s_msblue", 219006, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msred", "Big", "DCWDX", "mrd_064s_msred", 219007, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msslv", "Big", "DCWDX", "mrd_064s_msslv", 219008, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_mswhite", "Big", "DCWDX", "mrd_064s_mswhite", 219009, 32, 32);
-					ReplaceTex("ev_s_msbody", "mrd_064s_msyelw", "Big", "DCWDX", "mrd_064s_msyelw", 219010, 32, 32);
+					if (DXconsistent)
+					{
+						ReplaceTex("ev_s_msbody", "mstx_body0", "MetalSonic", "DX", "mstx_body0", 1300001, 64, 64);
+						ReplaceTex("ev_s_msbody", "mstx_body1", "MetalSonic", "DX", "mstx_body1", 1300002, 16, 16);
+						ReplaceTex("ev_s_msbody", "mstx_ref0", "MetalSonic", "DX", "mstx_ref0", 1300003, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref1", "MetalSonic", "DX", "mstx_ref1", 1300004, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref2", "MetalSonic", "DX", "mstx_ref2", 1300005, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref3", "MetalSonic", "DX", "mstx_ref3", 1300006, 32, 32);
+						ReplaceTex("ev_s_msbody", "mstx_ref5", "MetalSonic", "DX", "mstx_ref5", 1300007, 32, 32);
+					}
+					else
+					{
+						ReplaceTex("ev_s_msbody", "mrd_032s_msana", "MetalSonic", "DCWDX", "mrd_032s_msana", 219002, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_032s_mseye", "MetalSonic", "DCWDX", "mrd_032s_mseye", 219004, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_064s_msblack", "MetalSonic", "DCWDX", "mrd_064s_msblack", 219005, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_064s_msblue", "MetalSonic", "DCWDX", "mrd_064s_msblue", 219006, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_064s_msred", "MetalSonic", "DCWDX", "mrd_064s_msred", 219007, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_064s_msslv", "MetalSonic", "DCWDX", "mrd_064s_msslv", 219008, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_064s_mswhite", "MetalSonic", "DCWDX", "mrd_064s_mswhite", 219009, 32, 32);
+						ReplaceTex("ev_s_msbody", "mrd_064s_msyelw", "MetalSonic", "DCWDX", "mrd_064s_msyelw", 219010, 32, 32);
+					}					
 				}
 			}
 		}
@@ -1246,306 +1376,480 @@ extern "C"
 				{
 					if (Consistency == true)
 					{
-						ReplacePVM("Eggman", "Eggman_dxldc");
-						ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "DXLDC", "kan_g", 420038, 64, 64);
-						ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
-						ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
-						ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("egm1eggman", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
-						ReplaceTex("egm1eggman", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
-						ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("egm1eggman", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
-						ReplaceTex("egm1eggman", "s_testhand", "Eggman", "DXLDC", "s_testhand", 420045, 64, 64);
-						ReplaceTex("egm1eggman", "kan_s", "Eggman", "DXLDC", "kan_s", 500987, 64, 64);
-						ReplaceTex("egm1eggman", "eghada", "Eggman", "DXLDC", "eghada", 500998, 8, 8);
-						ReplaceTex("egm1eggman", "eghana", "Eggman", "DXLDC", "eghana", 500999, 8, 8);
-						ReplaceTex("egm2_common", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 406042, 32, 32);
-						ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 406043, 64, 64);
-						ReplaceTex("egm2_common", "kan_g", "Eggman", "DXLDC", "kan_g", 406045, 64, 64);
-						ReplaceTex("egm2_common", "kan_m", "Eggman", "DXLDC", "kan_m", 406046, 64, 64);
-						ReplaceTex("egm2_common", "e_hige", "Eggman", "DXLDC", "e_hige", 406047, 64, 64);
-						ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 406048, 32, 32);
-						ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 406049, 32, 32);
-						ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXLDC", "s_hando2", 406051, 32, 32);
-						ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXLDC", "s_testhand", 406052, 64, 64);
-						ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("egm3mdl", "kan_g", "Eggman", "DXLDC", "kan_g", 420038, 64, 64);
-						ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
-						ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
-						ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
-						ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "DXLDC", "s_hando2", 600140, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 600142, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 600143, 64, 64);
-						ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 600144, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 600145, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "DXLDC", "e_hige", 600146, 64, 64);
-						ReplaceTex("ev_eggman_body", "eghada", "Eggman", "DXLDC", "eghada", 600158, 8, 8);
-						ReplaceTex("ev_eggman_body", "eghana", "Eggman", "DXLDC", "eghana", 600159, 8, 8);
-						ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "DXLDC", "kan_g", 600164, 64, 64);
-						ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "DXLDC", "kan_m", 600165, 64, 64);
-						ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "DXLDC", "s_testhand", 600169, 64, 64);
-						ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "DXLDC", "kan_s", 600226, 64, 64);
-						ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXLDC", "s_hando2", 710359, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 710332, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 710333, 64, 64);
-						ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 710334, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 710335, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXLDC", "e_hige", 710336, 64, 64);
-						ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXLDC", "eghada", 710348, 8, 8);
-						ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXLDC", "eghana", 710349, 8, 8);
-						ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "DXLDC", "kan_g", 710354, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXLDC", "kan_m", 710355, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXLDC", "kan_s", 710356, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXLDC", "kan_y", 710357, 64, 64);
-						ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXLDC", "s_testhand", 710360, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "DXLDC", "kan_g", 420038, 64, 64);
-						ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
+						if (DXconsistent)
+						{
+							ReplaceTex("eggman", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("eggman", "e_fuku02", "Eggman", "DXLDC", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("eggman", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("eggman", "e_hige", "Eggman", "DXLDC", "e_hige", 710304, 32, 32);
+							ReplaceTex("eggman", "eghada", "Eggman", "DXLDC", "eghada", 710309, 8, 8);
+							ReplaceTex("eggman", "eghana", "Eggman", "DXLDC", "eghana", 710310, 8, 8);
+							ReplaceTex("eggman", "kan_m", "Eggman", "DXLDC", "kan_m", 710313, 64, 64);
+							ReplaceTex("eggman", "kan_s", "Eggman", "DXLDC", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("eggman", "kan_y", "Eggman", "DXLDC", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("eggman", "s_hando2", "Eggman", "DXLDC", "s_hando2", 710316, 32, 32);
+							ReplaceTex("eggman", "s_testhand", "Eggman", "DXLDC", "s_testhand", 710317, 32, 32);							
+							ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXLDC", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("egm2_common", "e_hige", "Eggman", "DXLDC", "e_hige", 710304, 32, 32);
+							ReplaceTex("egm2_common", "eghada", "Eggman", "DXLDC", "eghada", 710309, 8, 8);
+							ReplaceTex("egm2_common", "eghana", "Eggman", "DXLDC", "eghana", 710310, 8, 8);
+							ReplaceTex("egm2_common", "kan_m", "Eggman", "DXLDC", "kan_m", 710313, 64, 64);
+							ReplaceTex("egm2_common", "kan_s", "Eggman", "DXLDC", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("egm2_common", "kan_y", "Eggman", "DXLDC", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXLDC", "s_hando2", 710316, 32, 32);
+							ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXLDC", "s_testhand", 710317, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXLDC", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXLDC", "e_hige", 710304, 32, 32);
+							ReplaceTex("egm3mdl", "eghada", "Eggman", "DXLDC", "eghada", 710309, 8, 8);
+							ReplaceTex("egm3mdl", "eghana", "Eggman", "DXLDC", "eghana", 710310, 8, 8);
+							ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXLDC", "kan_m", 710313, 64, 64);
+							ReplaceTex("egm3mdl", "kan_s", "Eggman", "DXLDC", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("egm3mdl", "kan_y", "Eggman", "DXLDC", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXLDC", "s_hando2", 710316, 32, 32);
+							ReplaceTex("egm3mdl", "s_testhand", "Eggman", "DXLDC", "s_testhand", 710317, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 600142, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXLDC", "e_fuku02_dx", 600143, 64, 64);
+							ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 600145, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXLDC", "e_hige", 600146, 32, 32);
+							ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXLDC", "eghada", 600158, 8, 8);
+							ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXLDC", "eghana", 600159, 8, 8);
+							ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXLDC", "kan_m", 600165, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXLDC", "kan_s_dx", 600144, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXLDC", "kan_y_dx", 600166, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXLDC", "s_hando2", 600140, 32, 32);
+							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXLDC", "s_testhand", 600169, 32, 32);
+						}
+
+						else
+						{
+							ReplacePVM("Eggman", "Eggman_dxldc");
+							ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "DXLDC", "kan_g", 420038, 64, 64);
+							ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
+							ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
+							ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("egm1eggman", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
+							ReplaceTex("egm1eggman", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
+							ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("egm1eggman", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
+							ReplaceTex("egm1eggman", "s_testhand", "Eggman", "DXLDC", "s_testhand", 420045, 64, 64);
+							ReplaceTex("egm1eggman", "kan_s", "Eggman", "DXLDC", "kan_s", 500987, 64, 64);
+							ReplaceTex("egm1eggman", "eghada", "Eggman", "DXLDC", "eghada", 500998, 8, 8);
+							ReplaceTex("egm1eggman", "eghana", "Eggman", "DXLDC", "eghana", 500999, 8, 8);
+							ReplaceTex("egm2_common", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 406042, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 406043, 64, 64);
+							ReplaceTex("egm2_common", "kan_g", "Eggman", "DXLDC", "kan_g", 406045, 64, 64);
+							ReplaceTex("egm2_common", "kan_m", "Eggman", "DXLDC", "kan_m", 406046, 64, 64);
+							ReplaceTex("egm2_common", "e_hige", "Eggman", "DXLDC", "e_hige", 406047, 64, 64);
+							ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 406048, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 406049, 32, 32);
+							ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXLDC", "s_hando2", 406051, 32, 32);
+							ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXLDC", "s_testhand", 406052, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("egm3mdl", "kan_g", "Eggman", "DXLDC", "kan_g", 420038, 64, 64);
+							ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
+							ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
+							ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "DXLDC", "s_hando2", 600140, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 600142, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 600143, 64, 64);
+							ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 600144, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 600145, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "DXLDC", "e_hige", 600146, 64, 64);
+							ReplaceTex("ev_eggman_body", "eghada", "Eggman", "DXLDC", "eghada", 600158, 8, 8);
+							ReplaceTex("ev_eggman_body", "eghana", "Eggman", "DXLDC", "eghana", 600159, 8, 8);
+							ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "DXLDC", "kan_g", 600164, 64, 64);
+							ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "DXLDC", "kan_m", 600165, 64, 64);
+							ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "DXLDC", "s_testhand", 600169, 64, 64);
+							ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "DXLDC", "kan_s", 600226, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXLDC", "s_hando2", 710359, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 710332, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 710333, 64, 64);
+							ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 710334, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 710335, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXLDC", "e_hige", 710336, 64, 64);
+							ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXLDC", "eghada", 710348, 8, 8);
+							ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXLDC", "eghana", 710349, 8, 8);
+							ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "DXLDC", "kan_g", 710354, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXLDC", "kan_m", 710355, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXLDC", "kan_s", 710356, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXLDC", "kan_y", 710357, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXLDC", "s_testhand", 710360, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "DXLDC", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXLDC", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "DXLDC", "kan_g", 420038, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXLDC", "kan_m", 420039, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXLDC", "e_hige", 420040, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXLDC", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXLDC", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXLDC", "s_hando2", 420044, 32, 32);
+						}
+						
 					}
 
 					else
 					{
-						ReplacePVM("Eggman", "Eggman_ld");
-						ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "LD", "kan_g", 420038, 64, 64);
-						ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
-						ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
-						ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("egm1eggman", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
-						ReplaceTex("egm1eggman", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
-						ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("egm1eggman", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
-						ReplaceTex("egm1eggman", "s_testhand", "Eggman", "LD", "s_testhand", 420045, 64, 64);
-						ReplaceTex("egm1eggman", "kan_s", "Eggman", "LD", "kan_s", 500987, 64, 64);
-						ReplaceTex("egm1eggman", "eghada", "Eggman", "LD", "eghada", 500998, 8, 8);
-						ReplaceTex("egm1eggman", "eghana", "Eggman", "LD", "eghana", 500999, 8, 8);
-						ReplaceTex("egm2_common", "e_fuku03", "Eggman", "LD", "e_fuku03", 406042, 32, 32);
-						ReplaceTex("egm2_common", "e_fuku02", "Eggman", "LD", "e_fuku02", 406043, 64, 64);
-						ReplaceTex("egm2_common", "kan_g", "Eggman", "LD", "kan_g", 406045, 64, 64);
-						ReplaceTex("egm2_common", "kan_m", "Eggman", "LD", "kan_m", 406046, 64, 64);
-						ReplaceTex("egm2_common", "e_hige", "Eggman", "LD", "e_hige", 406047, 64, 64);
-						ReplaceTex("egm2_common", "e_fuku04", "Eggman", "LD", "e_fuku04", 406048, 32, 32);
-						ReplaceTex("egm2_common", "e_fuku01", "Eggman", "LD", "e_fuku01", 406049, 32, 32);
-						ReplaceTex("egm2_common", "s_hando2", "Eggman", "LD", "s_hando2", 406051, 32, 32);
-						ReplaceTex("egm2_common", "s_testhand", "Eggman", "LD", "s_testhand", 406052, 64, 64);
-						ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("egm3mdl", "kan_g", "Eggman", "LD", "kan_g", 420038, 64, 64);
-						ReplaceTex("egm3mdl", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
-						ReplaceTex("egm3mdl", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
-						ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("egm3mdl", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
-						ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "LD", "s_hando2", 600140, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "LD", "e_fuku01", 600142, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "LD", "e_fuku02", 600143, 64, 64);
-						ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "LD", "e_fuku03", 600144, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "LD", "e_fuku04", 600145, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "LD", "e_hige", 600146, 64, 64);
-						ReplaceTex("ev_eggman_body", "eghada", "Eggman", "LD", "eghada", 600158, 8, 8);
-						ReplaceTex("ev_eggman_body", "eghana", "Eggman", "LD", "eghana", 600159, 8, 8);
-						ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "LD", "kan_g", 600164, 64, 64);
-						ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "LD", "kan_m", 600165, 64, 64);
-						ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "LD", "s_testhand", 600169, 64, 64);
-						ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "LD", "kan_s", 600226, 64, 64);
-						ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "LD", "s_hando2", 710359, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "LD", "e_fuku01", 710332, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "LD", "e_fuku02", 710333, 64, 64);
-						ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "LD", "e_fuku03", 710334, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "LD", "e_fuku04", 710335, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "LD", "e_hige", 710336, 64, 64);
-						ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "LD", "eghada", 710348, 8, 8);
-						ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "LD", "eghana", 710349, 8, 8);
-						ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "LD", "kan_g", 710354, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "LD", "kan_m", 710355, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "LD", "kan_s", 710356, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "LD", "kan_y", 710357, 64, 64);
-						ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "LD", "s_testhand", 710360, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "LD", "kan_g", 420038, 64, 64);
-						ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
+						if (DXconsistent)
+						{
+							ReplaceTex("eggman", "e_fuku01", "Eggman", "LD", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("eggman", "e_fuku02", "Eggman", "LD", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("eggman", "e_fuku04", "Eggman", "LD", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("eggman", "e_hige", "Eggman", "LD", "e_hige", 710304, 32, 32);
+							ReplaceTex("eggman", "eghada", "Eggman", "LD", "eghada", 710309, 8, 8);
+							ReplaceTex("eggman", "eghana", "Eggman", "LD", "eghana", 710310, 8, 8);
+							ReplaceTex("eggman", "kan_m", "Eggman", "LD", "kan_m", 710313, 64, 64);
+							ReplaceTex("eggman", "kan_s", "Eggman", "LD", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("eggman", "kan_y", "Eggman", "LD", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("eggman", "s_hando2", "Eggman", "LD", "s_hando2", 710316, 32, 32);
+							ReplaceTex("eggman", "s_testhand", "Eggman", "LD", "s_testhand", 710317, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku01", "Eggman", "LD", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku02", "Eggman", "LD", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("egm2_common", "e_fuku04", "Eggman", "LD", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("egm2_common", "e_hige", "Eggman", "LD", "e_hige", 710304, 32, 32);
+							ReplaceTex("egm2_common", "eghada", "Eggman", "LD", "eghada", 710309, 8, 8);
+							ReplaceTex("egm2_common", "eghana", "Eggman", "LD", "eghana", 710310, 8, 8);
+							ReplaceTex("egm2_common", "kan_m", "Eggman", "LD", "kan_m", 710313, 64, 64);
+							ReplaceTex("egm2_common", "kan_s", "Eggman", "LD", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("egm2_common", "kan_y", "Eggman", "LD", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("egm2_common", "s_hando2", "Eggman", "LD", "s_hando2", 710316, 32, 32);
+							ReplaceTex("egm2_common", "s_testhand", "Eggman", "LD", "s_testhand", 710317, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "LD", "e_fuku01", 710300, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "LD", "e_fuku02_dx", 710301, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "LD", "e_fuku04", 710303, 32, 32);
+							ReplaceTex("egm3mdl", "e_hige", "Eggman", "LD", "e_hige", 710304, 32, 32);
+							ReplaceTex("egm3mdl", "eghada", "Eggman", "LD", "eghada", 710309, 8, 8);
+							ReplaceTex("egm3mdl", "eghana", "Eggman", "LD", "eghana", 710310, 8, 8);
+							ReplaceTex("egm3mdl", "kan_m", "Eggman", "LD", "kan_m", 710313, 64, 64);
+							ReplaceTex("egm3mdl", "kan_s", "Eggman", "LD", "kan_s_dx", 710314, 64, 64);
+							ReplaceTex("egm3mdl", "kan_y", "Eggman", "LD", "kan_y_dx", 710315, 64, 64);
+							ReplaceTex("egm3mdl", "s_hando2", "Eggman", "LD", "s_hando2", 710316, 32, 32);
+							ReplaceTex("egm3mdl", "s_testhand", "Eggman", "LD", "s_testhand", 710317, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "LD", "e_fuku01", 600142, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "LD", "e_fuku02_dx", 600143, 64, 64);
+							ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "LD", "e_fuku04", 600145, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "LD", "e_hige", 600146, 32, 32);
+							ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "LD", "eghada", 600158, 8, 8);
+							ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "LD", "eghana", 600159, 8, 8);
+							ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "LD", "kan_m", 600165, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "LD", "kan_s_dx", 600144, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "LD", "kan_y_dx", 600166, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "LD", "s_hando2", 600140, 32, 32);
+							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "LD", "s_testhand", 600169, 32, 32);
+						}
+
+						else
+						{
+							ReplacePVM("Eggman", "Eggman_ld");
+							ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "LD", "kan_g", 420038, 64, 64);
+							ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
+							ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
+							ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("egm1eggman", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
+							ReplaceTex("egm1eggman", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
+							ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("egm1eggman", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
+							ReplaceTex("egm1eggman", "s_testhand", "Eggman", "LD", "s_testhand", 420045, 64, 64);
+							ReplaceTex("egm1eggman", "kan_s", "Eggman", "LD", "kan_s", 500987, 64, 64);
+							ReplaceTex("egm1eggman", "eghada", "Eggman", "LD", "eghada", 500998, 8, 8);
+							ReplaceTex("egm1eggman", "eghana", "Eggman", "LD", "eghana", 500999, 8, 8);
+							ReplaceTex("egm2_common", "e_fuku03", "Eggman", "LD", "e_fuku03", 406042, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku02", "Eggman", "LD", "e_fuku02", 406043, 64, 64);
+							ReplaceTex("egm2_common", "kan_g", "Eggman", "LD", "kan_g", 406045, 64, 64);
+							ReplaceTex("egm2_common", "kan_m", "Eggman", "LD", "kan_m", 406046, 64, 64);
+							ReplaceTex("egm2_common", "e_hige", "Eggman", "LD", "e_hige", 406047, 64, 64);
+							ReplaceTex("egm2_common", "e_fuku04", "Eggman", "LD", "e_fuku04", 406048, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku01", "Eggman", "LD", "e_fuku01", 406049, 32, 32);
+							ReplaceTex("egm2_common", "s_hando2", "Eggman", "LD", "s_hando2", 406051, 32, 32);
+							ReplaceTex("egm2_common", "s_testhand", "Eggman", "LD", "s_testhand", 406052, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("egm3mdl", "kan_g", "Eggman", "LD", "kan_g", 420038, 64, 64);
+							ReplaceTex("egm3mdl", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
+							ReplaceTex("egm3mdl", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("egm3mdl", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
+							ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "LD", "s_hando2", 600140, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "LD", "e_fuku01", 600142, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "LD", "e_fuku02", 600143, 64, 64);
+							ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "LD", "e_fuku03", 600144, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "LD", "e_fuku04", 600145, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "LD", "e_hige", 600146, 64, 64);
+							ReplaceTex("ev_eggman_body", "eghada", "Eggman", "LD", "eghada", 600158, 8, 8);
+							ReplaceTex("ev_eggman_body", "eghana", "Eggman", "LD", "eghana", 600159, 8, 8);
+							ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "LD", "kan_g", 600164, 64, 64);
+							ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "LD", "kan_m", 600165, 64, 64);
+							ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "LD", "s_testhand", 600169, 64, 64);
+							ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "LD", "kan_s", 600226, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "LD", "s_hando2", 710359, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "LD", "e_fuku01", 710332, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "LD", "e_fuku02", 710333, 64, 64);
+							ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "LD", "e_fuku03", 710334, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "LD", "e_fuku04", 710335, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "LD", "e_hige", 710336, 64, 64);
+							ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "LD", "eghada", 710348, 8, 8);
+							ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "LD", "eghana", 710349, 8, 8);
+							ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "LD", "kan_g", 710354, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "LD", "kan_m", 710355, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "LD", "kan_s", 710356, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "LD", "kan_y", 710357, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "LD", "s_testhand", 710360, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "LD", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "LD", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "LD", "kan_g", 420038, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "LD", "kan_m", 420039, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "LD", "e_hige", 420040, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "LD", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "LD", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "LD", "s_hando2", 420044, 32, 32);
+						}						
 					}
 				}
 
 				if (KindofTextDX == DreamcastT)
 				{
-					ReplacePVM("Eggman", "Eggman_dxd");
-					ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
-					ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
-					ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "DXD", "kan_g", 420038, 64, 64);
-					ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
-					ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
-					ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
-					ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
-					ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
-					ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
-					ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
-					ReplaceTex("egm1eggman", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
-					ReplaceTex("egm1eggman", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
-					ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
-					ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
-					ReplaceTex("egm1eggman", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
-					ReplaceTex("egm1eggman", "s_testhand", "Eggman", "DXD", "s_testhand", 420045, 64, 64);
-					ReplaceTex("egm1eggman", "kan_s", "Eggman", "DXD", "kan_s", 500987, 64, 64);
-					ReplaceTex("egm1eggman", "eghada", "Eggman", "DXD", "eghada", 500998, 8, 8);
-					ReplaceTex("egm1eggman", "eghana", "Eggman", "DXD", "eghana", 500999, 8, 8);
-					ReplaceTex("egm2_common", "e_fuku03", "Eggman", "DXD", "e_fuku03", 406042, 32, 32);
-					ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXD", "e_fuku02", 406043, 64, 64);
-					ReplaceTex("egm2_common", "kan_g", "Eggman", "DXD", "kan_g", 406045, 64, 64);
-					ReplaceTex("egm2_common", "kan_m", "Eggman", "DXD", "kan_m", 406046, 64, 64);
-					ReplaceTex("egm2_common", "e_hige", "Eggman", "DXD", "e_hige", 406047, 64, 64);
-					ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXD", "e_fuku04", 406048, 32, 32);
-					ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXD", "e_fuku01", 406049, 32, 32);
-					ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXD", "s_hando2", 406051, 32, 32);
-					ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXD", "s_testhand", 406052, 64, 64);
-					ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
-					ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
-					ReplaceTex("egm3mdl", "kan_g", "Eggman", "DXD", "kan_g", 420038, 64, 64);
-					ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
-					ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
-					ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
-					ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
-					ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
-					ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "DXD", "s_hando2", 600140, 32, 32);
-					ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "DXD", "e_fuku01", 600142, 32, 32);
-					ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "DXD", "e_fuku02", 600143, 64, 64);
-					ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "DXD", "e_fuku03", 600144, 32, 32);
-					ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "DXD", "e_fuku04", 600145, 32, 32);
-					ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "DXD", "e_hige", 600146, 64, 64);
-					ReplaceTex("ev_eggman_body", "eghada", "Eggman", "DXD", "eghada", 600158, 8, 8);
-					ReplaceTex("ev_eggman_body", "eghana", "Eggman", "DXD", "eghana", 600159, 8, 8);
-					ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "DXD", "kan_g", 600164, 64, 64);
-					ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "DXD", "kan_m", 600165, 64, 64);
-					ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "DXD", "s_testhand", 600169, 64, 64);
-					ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "DXD", "kan_s", 600226, 64, 64);
-					ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXD", "s_hando2", 710359, 32, 32);
-					ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXD", "e_fuku01", 710332, 32, 32);
-					ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXD", "e_fuku02", 710333, 64, 64);
-					ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "DXD", "e_fuku03", 710334, 32, 32);
-					ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXD", "e_fuku04", 710335, 32, 32);
-					ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXD", "e_hige", 710336, 64, 64);
-					ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXD", "eghada", 710348, 8, 8);
-					ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXD", "eghana", 710349, 8, 8);
-					ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "DXD", "kan_g", 710354, 64, 64);
-					ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXD", "kan_m", 710355, 64, 64);
-					ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXD", "kan_s", 710356, 64, 64);
-					ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXD", "kan_y", 710357, 64, 64);
-					ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXD", "s_testhand", 710360, 64, 64);
-					ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
-					ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
-					ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "DXD", "kan_g", 420038, 64, 64);
-					ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
-					ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
-					ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
-					ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
-					ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
+					if (DXconsistent)
+					{
+						ReplaceTex("eggman", "e_fuku01", "Eggman", "DXD", "e_fuku01", 710300, 32, 32);
+						ReplaceTex("eggman", "e_fuku02", "Eggman", "DXD", "e_fuku02_dx", 710301, 64, 64);
+						ReplaceTex("eggman", "e_fuku04", "Eggman", "DXD", "e_fuku04", 710303, 32, 32);
+						ReplaceTex("eggman", "e_hige", "Eggman", "DXD", "e_hige", 710304, 32, 32);
+						ReplaceTex("eggman", "e_kutu02", "Eggman", "DXD", "e_kutu02", 710307, 16, 16);
+						ReplaceTex("eggman", "eghada", "Eggman", "DXD", "eghada", 710309, 8, 8);
+						ReplaceTex("eggman", "eghana", "Eggman", "DXD", "eghana", 710310, 8, 8);
+						ReplaceTex("eggman", "egsiro", "Eggman", "DXD", "kan_s", 710311, 64, 64);
+						ReplaceTex("eggman", "kan_m", "Eggman", "DXD", "kan_m", 710313, 64, 64);
+						ReplaceTex("eggman", "kan_s", "Eggman", "DXD", "kan_s_dx", 710314, 64, 64);
+						ReplaceTex("eggman", "kan_y", "Eggman", "DXD", "kan_y_dx", 710315, 64, 64);
+						ReplaceTex("eggman", "s_hando2", "Eggman", "DXD", "s_hando2", 710316, 32, 32);
+						ReplaceTex("eggman", "s_testhand", "Eggman", "DXD", "s_testhand", 710317, 32, 32);
+						ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXD", "e_fuku01", 710300, 32, 32);
+						ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXD", "e_fuku02_dx", 710301, 64, 64);
+						ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXD", "e_fuku04", 710303, 32, 32);
+						ReplaceTex("egm2_common", "e_hige", "Eggman", "DXD", "e_hige", 710304, 32, 32);
+						ReplaceTex("egm2_common", "e_kutu02", "Eggman", "DXD", "e_kutu02", 710307, 16, 16);
+						ReplaceTex("egm2_common", "eghada", "Eggman", "DXD", "eghada", 710309, 8, 8);
+						ReplaceTex("egm2_common", "eghana", "Eggman", "DXD", "eghana", 710310, 8, 8);
+						ReplaceTex("egm2_common", "egsiro", "Eggman", "DXD", "kan_s", 710311, 64, 64);
+						ReplaceTex("egm2_common", "kan_m", "Eggman", "DXD", "kan_m", 710313, 64, 64);
+						ReplaceTex("egm2_common", "kan_s", "Eggman", "DXD", "kan_s_dx", 710314, 64, 64);
+						ReplaceTex("egm2_common", "kan_y", "Eggman", "DXD", "kan_y_dx", 710315, 64, 64);
+						ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXD", "s_hando2", 710316, 32, 32);
+						ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXD", "s_testhand", 710317, 32, 32);
+						ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXD", "e_fuku01", 710300, 32, 32);
+						ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXD", "e_fuku02_dx", 710301, 64, 64);
+						ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXD", "e_fuku04", 710303, 32, 32);
+						ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXD", "e_hige", 710304, 32, 32);
+						ReplaceTex("egm3mdl", "e_kutu02", "Eggman", "DXD", "e_kutu02", 710307, 16, 16);
+						ReplaceTex("egm3mdl", "eghada", "Eggman", "DXD", "eghada", 710309, 8, 8);
+						ReplaceTex("egm3mdl", "eghana", "Eggman", "DXD", "eghana", 710310, 8, 8);
+						ReplaceTex("egm3mdl", "egsiro", "Eggman", "DXD", "kan_s", 710311, 64, 64);
+						ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXD", "kan_m", 710313, 64, 64);
+						ReplaceTex("egm3mdl", "kan_s", "Eggman", "DXD", "kan_s_dx", 710314, 64, 64);
+						ReplaceTex("egm3mdl", "kan_y", "Eggman", "DXD", "kan_y_dx", 710315, 64, 64);
+						ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXD", "s_hando2", 710316, 32, 32);
+						ReplaceTex("egm3mdl", "s_testhand", "Eggman", "DXD", "s_testhand", 710317, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXD", "e_fuku01", 600142, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXD", "e_fuku02_dx", 600143, 64, 64);
+						ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXD", "e_fuku04", 600145, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXD", "e_hige", 600146, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_kutu02", "Eggman", "DXD", "e_kutu02", 600148, 16, 16);
+						ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXD", "eghada", 600158, 8, 8);
+						ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXD", "eghana", 600159, 8, 8);
+						ReplaceTex("ev_eggmoble0", "egsiro", "Eggman", "DXD", "kan_s", 600163, 64, 64);
+						ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXD", "kan_m", 600165, 64, 64);
+						ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXD", "kan_s_dx", 600144, 64, 64);
+						ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXD", "kan_y_dx", 600166, 64, 64);
+						ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXD", "s_hando2", 600140, 32, 32);
+						ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXD", "s_testhand", 600169, 32, 32);
+					}
+
+					else
+					{
+						ReplacePVM("Eggman", "Eggman_dxd");
+						ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
+						ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
+						ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "DXD", "kan_g", 420038, 64, 64);
+						ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
+						ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
+						ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
+						ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
+						ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
+						ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
+						ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
+						ReplaceTex("egm1eggman", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
+						ReplaceTex("egm1eggman", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
+						ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
+						ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
+						ReplaceTex("egm1eggman", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
+						ReplaceTex("egm1eggman", "s_testhand", "Eggman", "DXD", "s_testhand", 420045, 64, 64);
+						ReplaceTex("egm1eggman", "kan_s", "Eggman", "DXD", "kan_s", 500987, 64, 64);
+						ReplaceTex("egm1eggman", "eghada", "Eggman", "DXD", "eghada", 500998, 8, 8);
+						ReplaceTex("egm1eggman", "eghana", "Eggman", "DXD", "eghana", 500999, 8, 8);
+						ReplaceTex("egm2_common", "e_fuku03", "Eggman", "DXD", "e_fuku03", 406042, 32, 32);
+						ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXD", "e_fuku02", 406043, 64, 64);
+						ReplaceTex("egm2_common", "kan_g", "Eggman", "DXD", "kan_g", 406045, 64, 64);
+						ReplaceTex("egm2_common", "kan_m", "Eggman", "DXD", "kan_m", 406046, 64, 64);
+						ReplaceTex("egm2_common", "e_hige", "Eggman", "DXD", "e_hige", 406047, 64, 64);
+						ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXD", "e_fuku04", 406048, 32, 32);
+						ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXD", "e_fuku01", 406049, 32, 32);
+						ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXD", "s_hando2", 406051, 32, 32);
+						ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXD", "s_testhand", 406052, 64, 64);
+						ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
+						ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
+						ReplaceTex("egm3mdl", "kan_g", "Eggman", "DXD", "kan_g", 420038, 64, 64);
+						ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
+						ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
+						ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
+						ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
+						ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
+						ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "DXD", "s_hando2", 600140, 32, 32);
+						ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "DXD", "e_fuku01", 600142, 32, 32);
+						ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "DXD", "e_fuku02", 600143, 64, 64);
+						ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "DXD", "e_fuku03", 600144, 32, 32);
+						ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "DXD", "e_fuku04", 600145, 32, 32);
+						ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "DXD", "e_hige", 600146, 64, 64);
+						ReplaceTex("ev_eggman_body", "eghada", "Eggman", "DXD", "eghada", 600158, 8, 8);
+						ReplaceTex("ev_eggman_body", "eghana", "Eggman", "DXD", "eghana", 600159, 8, 8);
+						ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "DXD", "kan_g", 600164, 64, 64);
+						ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "DXD", "kan_m", 600165, 64, 64);
+						ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "DXD", "s_testhand", 600169, 64, 64);
+						ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "DXD", "kan_s", 600226, 64, 64);
+						ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXD", "s_hando2", 710359, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXD", "e_fuku01", 710332, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXD", "e_fuku02", 710333, 64, 64);
+						ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "DXD", "e_fuku03", 710334, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXD", "e_fuku04", 710335, 32, 32);
+						ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXD", "e_hige", 710336, 64, 64);
+						ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXD", "eghada", 710348, 8, 8);
+						ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXD", "eghana", 710349, 8, 8);
+						ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "DXD", "kan_g", 710354, 64, 64);
+						ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXD", "kan_m", 710355, 64, 64);
+						ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXD", "kan_s", 710356, 64, 64);
+						ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXD", "kan_y", 710357, 64, 64);
+						ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXD", "s_testhand", 710360, 64, 64);
+						ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "DXD", "e_fuku03", 420035, 32, 32);
+						ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXD", "e_fuku02", 420036, 64, 64);
+						ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "DXD", "kan_g", 420038, 64, 64);
+						ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXD", "kan_m", 420039, 64, 64);
+						ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXD", "e_hige", 420040, 64, 64);
+						ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXD", "e_fuku04", 420041, 32, 32);
+						ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXD", "e_fuku01", 420042, 32, 32);
+						ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXD", "s_hando2", 420044, 32, 32);
+					}					
 				}
 
 				if (KindofTextDX == OriginalDX)
 				{
 					if (Consistency == true)
 					{
-						ReplacePVM("Eggman", "Eggman_dxlsa2");
-						ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "DXLSA2", "kan_g", 420038, 64, 64);
-						ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
-						ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
-						ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("egm1eggman", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
-						ReplaceTex("egm1eggman", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
-						ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("egm1eggman", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
-						ReplaceTex("egm1eggman", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 420045, 64, 64);
-						ReplaceTex("egm1eggman", "kan_s", "Eggman", "DXLSA2", "kan_s", 500987, 64, 64);
-						ReplaceTex("egm1eggman", "eghada", "Eggman", "DXLSA2", "eghada", 500998, 8, 8);
-						ReplaceTex("egm1eggman", "eghana", "Eggman", "DXLSA2", "eghana", 500999, 8, 8);
-						ReplaceTex("egm2_common", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 406042, 32, 32);
-						ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 406043, 64, 64);
-						ReplaceTex("egm2_common", "kan_g", "Eggman", "DXLSA2", "kan_g", 406045, 64, 64);
-						ReplaceTex("egm2_common", "kan_m", "Eggman", "DXLSA2", "kan_m", 406046, 64, 64);
-						ReplaceTex("egm2_common", "e_hige", "Eggman", "DXLSA2", "e_hige", 406047, 64, 64);
-						ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 406048, 32, 32);
-						ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 406049, 32, 32);
-						ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 406051, 32, 32);
-						ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 406052, 64, 64);
-						ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("egm3mdl", "kan_g", "Eggman", "DXLSA2", "kan_g", 420038, 64, 64);
-						ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
-						ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
-						ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
-						ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 600140, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 600142, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 600143, 64, 64);
-						ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 600144, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 600145, 32, 32);
-						ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "DXLSA2", "e_hige", 600146, 64, 64);
-						ReplaceTex("ev_eggman_body", "eghada", "Eggman", "DXLSA2", "eghada", 600158, 8, 8);
-						ReplaceTex("ev_eggman_body", "eghana", "Eggman", "DXLSA2", "eghana", 600159, 8, 8);
-						ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "DXLSA2", "kan_g", 600164, 64, 64);
-						ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "DXLSA2", "kan_m", 600165, 64, 64);
-						ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 600169, 64, 64);
-						ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "DXLSA2", "kan_s", 600226, 64, 64);
-						ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 710359, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 710332, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 710333, 64, 64);
-						ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 710334, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 710335, 32, 32);
-						ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXLSA2", "e_hige", 710336, 64, 64);
-						ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXLSA2", "eghada", 710348, 8, 8);
-						ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXLSA2", "eghana", 710349, 8, 8);
-						ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "DXLSA2", "kan_g", 710354, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXLSA2", "kan_m", 710355, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXLSA2", "kan_s", 710356, 64, 64);
-						ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXLSA2", "kan_y", 710357, 64, 64);
-						ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 710360, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
-						ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
-						ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "DXLSA2", "kan_g", 420038, 64, 64);
-						ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
-						ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
-						ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
-						ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
+						if (DXconsistent)
+						{
+							ReplacePVM("Eggman", "Eggman_dx");
+							ReplacePVM("egm2_common", "egm2_common_dx");
+							ReplacePVM("egm3mdl", "egm3mdl_dx");
+							ReplacePVM("ev_eggmoble0", "ev_eggmoble0_dx");
+						}
+
+						else
+						{
+							ReplacePVM("Eggman", "Eggman_dxlsa2");
+							ReplaceTex("chaos6_eggman", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("chaos6_eggman", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("chaos6_eggman", "kan_g", "Eggman", "DXLSA2", "kan_g", 420038, 64, 64);
+							ReplaceTex("chaos6_eggman", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
+							ReplaceTex("chaos6_eggman", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
+							ReplaceTex("chaos6_eggman", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("chaos6_eggman", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("chaos6_eggman", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("egm1eggman", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
+							ReplaceTex("egm1eggman", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
+							ReplaceTex("egm1eggman", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("egm1eggman", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("egm1eggman", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
+							ReplaceTex("egm1eggman", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 420045, 64, 64);
+							ReplaceTex("egm1eggman", "kan_s", "Eggman", "DXLSA2", "kan_s", 500987, 64, 64);
+							ReplaceTex("egm1eggman", "eghada", "Eggman", "DXLSA2", "eghada", 500998, 8, 8);
+							ReplaceTex("egm1eggman", "eghana", "Eggman", "DXLSA2", "eghana", 500999, 8, 8);
+							ReplaceTex("egm2_common", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 406042, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 406043, 64, 64);
+							ReplaceTex("egm2_common", "kan_g", "Eggman", "DXLSA2", "kan_g", 406045, 64, 64);
+							ReplaceTex("egm2_common", "kan_m", "Eggman", "DXLSA2", "kan_m", 406046, 64, 64);
+							ReplaceTex("egm2_common", "e_hige", "Eggman", "DXLSA2", "e_hige", 406047, 64, 64);
+							ReplaceTex("egm2_common", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 406048, 32, 32);
+							ReplaceTex("egm2_common", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 406049, 32, 32);
+							ReplaceTex("egm2_common", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 406051, 32, 32);
+							ReplaceTex("egm2_common", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 406052, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("egm3mdl", "kan_g", "Eggman", "DXLSA2", "kan_g", 420038, 64, 64);
+							ReplaceTex("egm3mdl", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
+							ReplaceTex("egm3mdl", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
+							ReplaceTex("egm3mdl", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("egm3mdl", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("egm3mdl", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
+							ReplaceTex("ev_eggman_body", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 600140, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 600142, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 600143, 64, 64);
+							ReplaceTex("ev_eggman_body", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 600144, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 600145, 32, 32);
+							ReplaceTex("ev_eggman_body", "e_hige", "Eggman", "DXLSA2", "e_hige", 600146, 64, 64);
+							ReplaceTex("ev_eggman_body", "eghada", "Eggman", "DXLSA2", "eghada", 600158, 8, 8);
+							ReplaceTex("ev_eggman_body", "eghana", "Eggman", "DXLSA2", "eghana", 600159, 8, 8);
+							ReplaceTex("ev_eggman_body", "kan_g", "Eggman", "DXLSA2", "kan_g", 600164, 64, 64);
+							ReplaceTex("ev_eggman_body", "kan_m", "Eggman", "DXLSA2", "kan_m", 600165, 64, 64);
+							ReplaceTex("ev_eggman_body", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 600169, 64, 64);
+							ReplaceTex("ev_eggman_body", "kan_s", "Eggman", "DXLSA2", "kan_s", 600226, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 710359, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 710332, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 710333, 64, 64);
+							ReplaceTex("ev_eggmoble0", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 710334, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 710335, 32, 32);
+							ReplaceTex("ev_eggmoble0", "e_hige", "Eggman", "DXLSA2", "e_hige", 710336, 64, 64);
+							ReplaceTex("ev_eggmoble0", "eghada", "Eggman", "DXLSA2", "eghada", 710348, 8, 8);
+							ReplaceTex("ev_eggmoble0", "eghana", "Eggman", "DXLSA2", "eghana", 710349, 8, 8);
+							ReplaceTex("ev_eggmoble0", "kan_g", "Eggman", "DXLSA2", "kan_g", 710354, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_m", "Eggman", "DXLSA2", "kan_m", 710355, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_s", "Eggman", "DXLSA2", "kan_s", 710356, 64, 64);
+							ReplaceTex("ev_eggmoble0", "kan_y", "Eggman", "DXLSA2", "kan_y", 710357, 64, 64);
+							ReplaceTex("ev_eggmoble0", "s_testhand", "Eggman", "DXLSA2", "s_testhand", 710360, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku03", "Eggman", "DXLSA2", "e_fuku03", 420035, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku02", "Eggman", "DXLSA2", "e_fuku02", 420036, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_g", "Eggman", "DXLSA2", "kan_g", 420038, 64, 64);
+							ReplaceTex("mrace_eggmoble", "kan_m", "Eggman", "DXLSA2", "kan_m", 420039, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_hige", "Eggman", "DXLSA2", "e_hige", 420040, 64, 64);
+							ReplaceTex("mrace_eggmoble", "e_fuku04", "Eggman", "DXLSA2", "e_fuku04", 420041, 32, 32);
+							ReplaceTex("mrace_eggmoble", "e_fuku01", "Eggman", "DXLSA2", "e_fuku01", 420042, 32, 32);
+							ReplaceTex("mrace_eggmoble", "s_hando2", "Eggman", "DXLSA2", "s_hando2", 420044, 32, 32);
+						}
+						
 					}
 
 					else
 					{
-						ReplacePVM("Eggman", "Eggman_dx");
+						ReplacePVM("Eggman", "Eggman_dx_dx");
 					}
 				}
 			}
