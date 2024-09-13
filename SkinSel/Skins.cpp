@@ -1901,7 +1901,7 @@ extern "C"
 						{
 							ReplacePVM("Eggman", "Eggman_dx");
 							ReplacePVM("ev_eggman_body", "Eggman_dx");
-							ReplacePVM("chaos6_eggman", "Eggman_dx");
+							ReplacePVM("chaos6_eggman", "chaos6_eggman_dx");
 							ReplacePVM("egm1eggman", "Eggman_dx");
 							ReplacePVM("egm2_common", "egm2_common_dx");
 							ReplacePVM("egm3mdl", "egm3mdl_dx");
